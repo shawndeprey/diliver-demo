@@ -87,7 +87,7 @@ To access the web application outside of the VM, i.e. through a browser, you
 can easily do this by the following IP and whatever port you are running the
 application on.
 
-  30.30.30.11:3000
+  13.37.13.37:3000
 
 ## Dependency Changes
 
