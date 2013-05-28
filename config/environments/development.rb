@@ -33,7 +33,7 @@ Diliver::Application.configure do
   config.assets.compress = true
 
   # Expands the lines which load the assets
-  config.assets.debug = true
+  config.assets.debug = false
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
   config.assets.compile = true

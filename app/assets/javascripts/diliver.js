@@ -4,6 +4,7 @@
       	init: function(){
       		// Initializing our JS Library Settings
       	}
+      },
       init: function(){
       	diliver.settings.init();
       },
