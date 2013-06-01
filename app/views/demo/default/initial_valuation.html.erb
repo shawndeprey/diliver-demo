@@ -1,0 +1,59 @@
+<strong><%= label_tag 'ABC Valuation Method' %></strong>
+<ul>
+	<li>Revenue Multiplier</li>
+	<li>EBITDA Multiplier</li>
+	<li>Other</li>
+</ul>
+
+<table>
+	<tr>
+		<td>ABC Initial Valuation (of XYZ) = </td>
+		<td>$1,000,000</td>
+		<td>100%</td>
+	</tr>
+</table>
+
+<%= tag("br", nil, true) %>
+
+<strong><%= label_tag 'Term Sheet' %></strong>
+<table>
+	<tr>
+		<th>Source</th>
+		<th>Amount</th>
+		<th>Percent</th>
+	</tr>
+	<tr>
+		<td>Cash</td>
+		<td>$100,000</td>
+		<td>10%</td>
+	</tr>
+	<tr>
+		<td>Stock</td>
+		<td>$400,000</td>
+		<td>40%</td>
+	</tr>
+	<tr>
+		<td>Note</td>
+		<td>$200,000</td>
+		<td>20%</td>
+	</tr>
+	<tr>
+		<td>Earnout</td>
+		<td>$300,000</td>
+		<td>30%</td>
+	</tr>
+	<tr>
+		<td>Tax Benefit</td>
+		<td>$0</td>
+		<td>0%</td>
+	</tr>
+	<tr>
+		<td>Total</td>
+		<td>$1,000,000</td>
+		<td>100%</td>
+	</tr>
+</table>
+
+<%= tag("br", nil, true) %>
+
+<%= link_to "Confirmatory Due Diligence", "/demo/confirm-dd" %>
