@@ -13,5 +13,21 @@
 <hr>
 <%= yield %>
 
+<% if @timeline %>
+
+	<p>
+
+		We have a timeline yo!
+
+		<% if @timeline[:buttons] %>
+			<% @timeline[:buttons].each do |button| %>
+				<a href="javascript:void(0)" class="button">button</a>
+			<% end %>
+		<% end %>
+
+	</p>
+
+<% end %>
+
 </body>
 </html>

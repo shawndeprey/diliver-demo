@@ -9,6 +9,7 @@ class Demo::DefaultController < ApplicationController
 
   # GET /team-identification
   def team_identification
+    @timeline = {buttons:["Next","Previous"]}
   	respond_to do |format|
       format.html { } # team_identification.html.erb
     end
