@@ -29,10 +29,10 @@ class Demo::DefaultController < ApplicationController
     end
   end
 
-  # GET /prelim-dd
-  def prelim_dd
+  # GET /preliminary-due-diligence
+  def preliminary_due_diligence
     respond_to do |format|
-      format.html { } # prelim_dd.html.erb
+      format.html { } # preliminary_due_diligence.html.erb
     end
   end
 
@@ -43,10 +43,10 @@ class Demo::DefaultController < ApplicationController
     end
   end
 
-  # GET /confirm-dd
-  def confirm_dd
+  # GET /confirmatory-due-diligence
+  def confirmatory_due_diligence
     respond_to do |format|
-      format.html { } # confirm_dd.html.erb
+      format.html { } # confirmatory_due_diligence.html.erb
     end
   end
 

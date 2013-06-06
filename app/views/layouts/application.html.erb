@@ -1,33 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Diliver</title>
+  <title>DiliVer</title>
   <%#= favicon_link_tag '/favicon.ico' %>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<div class="header">
+		<%= image_tag("/images/logo-without-dimensions.png") %>
+		<div class="login_info">
+			<p>Deal Team Member: Joe Smith</p>
+			<p> | <a href=#>Logout</a></p>
+			<div class="user_title">
+				<p>Buyer ABC Director of Corporate Development</p>
+			</div>
+		</div>
+	</div>
+	<div class="toolbar">
+		<div class="toolbar_contents">
+			<a href="#" class="button arrow_down left"><span class="button_icon"></span></a>
+			<a href="#" class="button gear left"><span class="button_icon"></span></a>
+		</div>
+	</div>
+	<div class="nav_container">
+		<ul>
+			<li><a href="/demo/team-identification">Deal Team Identification</a></li>
+			<li><a href="/demo/buyer-qualification">Transaction Analysis</a></li>
+			<li><a href="/demo/seller-qualification">Screening</a></li>
+			<li><a href="/demo/seller-qualification">Qualification</a></li>
+			<li><a href="/demo/preliminary-due-diligence">Preliminary Due Diligence</a></li>
+			<li><a href="/demo/initial-valuation">Initial Valuation</a></li>
+			<li><a href="/demo/confirmatory-due-diligence">Confirmatory Due Diligence</a></li>
+			<li><a href="/demo/final-valuation">Final Valuation</a></li>
+		</ul>
+	</div>
+	<hr>
 
-<h2>DiliVer Demo</h2>
-<hr>
-<%= yield %>
+	<!-- Specific page content goes here -->
+	<div class="content">
+		<%= yield %>
+	</div>
+	<!-- Specific page content ends here -->
 
-<% if @timeline %>
-
-	<p>
-
-		We have a timeline yo!
-
-		<% if @timeline[:buttons] %>
-			<% @timeline[:buttons].each do |button| %>
-				<a href="javascript:void(0)" class="button">button</a>
-			<% end %>
-		<% end %>
-
-	</p>
-
-<% end %>
-
+	<div class="footer">
+		<div class="copyright">
+			DiliVer LLC &#169; 2013
+		</div>
+		<div class="footer_toolbar">
+			<div class="footer_toolbar_contents">
+				<p>Current Stage</p>
+				<a href="" class="button arrow_right right"><span class="button_content">Proceed to next stage</span><span class="button_icon"></span></a>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
