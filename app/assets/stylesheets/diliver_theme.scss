@@ -55,7 +55,7 @@ body
 	a.arrow_down span.button_icon
 	{
 		padding-left: 19px;
-		padding-top: 1px;
+		padding-top: -1px;
 		padding-bottom: 1px;
 		background: url(/images/arrow-down.png) no-repeat;
 		background-position: center center;
@@ -99,6 +99,7 @@ body
 
 	a.button span.button_content
 	{
+		font-size: 14px;
 		margin: 0px 10px;
 	}
 
@@ -134,7 +135,7 @@ body
 	a.button:active
 	{
 		position:relative;
-		top: 1px;
+		top: 3px;
 	}
 
 	a.left
@@ -154,19 +155,26 @@ body
 			padding: 10px;
 		}
 
-		div.login_info
+		div.user_info
 		{
 			float: right;
 			padding-right: 10px;
 			padding-top: 30px;
 
+			div.user_name
+			{
+				text-align: right;
+				margin-right: 15px;
+			}
+
+
 			div.user_title
 			{
-				p
-				{
-					font-size: 12px;
-					font-style: italic;
-				}
+				text-align: right;
+				font-size: 12px;
+				font-style: italic;
+				position: relative;
+				right: 74px;
 			}
 		}
 	}
@@ -184,12 +192,12 @@ body
 		a
 		{
 			position: relative;
-			top: 3px;
+			top: 2px;
 		}
 
 		div.toolbar_contents
 		{
-			margin-left: 15px;
+			margin-left: 10px;
 		}
 	}
 
@@ -200,6 +208,26 @@ body
 		padding-top: 5px;
 		padding-bottom: 5px;
 
+		a
+		{
+			color: #1b3764;
+		}
+
+		a:hover
+		{
+			color: #6599cb;
+		}
+
+		a.nav_active
+		{
+			color: #6599cb;
+		}
+
+		a.nav_active:hover
+		{
+			color: #1b3764;
+		}
+		
 		ul
 		{
 			text-decoration: none;
@@ -238,7 +266,7 @@ body
 			position: absolute;
 			top: 50%;
 			height: 1em;
-			margin-top: -0.5em;
+			margin-top: 0px;
 			left: 0;
 			right: 0;
 			text-align: center;
@@ -262,12 +290,12 @@ body
 			a
 			{
 				position: relative;
-				top: 3px;
+				top: 2px;
 			}
 
 			div.footer_toolbar_contents
 			{
-				margin-right: 15px;
+				margin-right: 10px;
 
 				p
 				{

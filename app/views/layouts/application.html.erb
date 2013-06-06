@@ -10,9 +10,10 @@
 <body>
 	<div class="header">
 		<%= image_tag("/images/logo-without-dimensions.png") %>
-		<div class="login_info">
-			<p>Deal Team Member: Joe Smith</p>
-			<p> | <a href=#>Logout</a></p>
+		<div class="user_info">
+			<div class="user_name">
+				<p>Deal Team Member: Joe Smith | <a href=#>Logout</a></p>
+			</div>
 			<div class="user_title">
 				<p>Buyer ABC Director of Corporate Development</p>
 			</div>
@@ -26,14 +27,7 @@
 	</div>
 	<div class="nav_container">
 		<ul>
-			<li><a href="/demo/team-identification">Deal Team Identification</a></li>
-			<li><a href="/demo/buyer-qualification">Transaction Analysis</a></li>
-			<li><a href="/demo/seller-qualification">Screening</a></li>
-			<li><a href="/demo/seller-qualification">Qualification</a></li>
-			<li><a href="/demo/preliminary-due-diligence">Preliminary Due Diligence</a></li>
-			<li><a href="/demo/initial-valuation">Initial Valuation</a></li>
-			<li><a href="/demo/confirmatory-due-diligence">Confirmatory Due Diligence</a></li>
-			<li><a href="/demo/final-valuation">Final Valuation</a></li>
+			<% @page_state[:timeline].each{|button|%> <li><a href='<%= button[:url] %>' <%if button[:is_active]%>class="nav_active"<%end%>><%= button[:title] %></a></li> <% } if @page_state && @page_state[:timeline] %>
 		</ul>
 	</div>
 	<hr>
