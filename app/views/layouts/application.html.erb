@@ -27,7 +27,7 @@
 	</div>
 	<div class="nav_container">
 		<ul>
-			<% @page_state[:timeline].each{|button|%> <li><a href='<%= button[:url] %>' <%if button[:is_active]%>class="nav_active"<%end%>><%= button[:title] %></a></li> <% } if @page_state && @page_state[:timeline] %>
+			<% @page_state[:timeline].each{|button|%> <li><a href='<%= button[:url] %>' <%if button[:is_active]%>class="nav_active"<%end%>><span <% if button[:is_current]%>class="nav_current"<%end%>></span><%= button[:title] %></a></li> <% } if @page_state && @page_state[:timeline] %>
 		</ul>
 	</div>
 	<hr>
@@ -45,7 +45,9 @@
 		<div class="footer_toolbar">
 			<div class="footer_toolbar_contents">
 				<p>Current Stage</p>
-				<a href="" class="button arrow_right right"><span class="button_content">Proceed to next stage</span><span class="button_icon"></span></a>
+				<% if @page_state && @page_state[:next_button]%>
+					<a href="<%= @page_state[:next_button][0][:url]%>" class="button arrow_right right"><span class="button_content"><%= @page_state[:next_button][0][:title]%></span><span class="button_icon"></span></a>
+				<% end %>
 			</div>
 		</div>
 	</div>
