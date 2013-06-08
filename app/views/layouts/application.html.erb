@@ -27,7 +27,7 @@
 	</div>
 	<div class="nav_container">
 		<ul>
-			<% @page_state[:timeline].each{|button|%> <li><a href='<%= button[:url] %>' <%if button[:is_active]%>class="nav_active"<%end%>><span <% if button[:is_current]%>class="nav_current"<%end%>></span><%= button[:title] %></a></li> <% } if @page_state && @page_state[:timeline] %>
+			<% @page_state[:timeline].each{|button|%> <li><a href='<%= button[:url] %>' <%if button[:is_active]%>class="nav_active"<%end%>><% if button[:is_current]%><img src="/images/arrow-right.png" /><%end%><%= button[:title] %></a></li> <% } if @page_state && @page_state[:timeline] %>
 		</ul>
 	</div>
 	<hr>

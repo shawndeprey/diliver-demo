@@ -1,9 +1,52 @@
-<h3>Transaction Analysis - <em>What is the Buyers Enterprise Focus? What is the reason/purpose for the transaction?</em></h3>
-<div style="margin-left:40px">
-	<strong><%= label_tag 'Enterprise Focus:' %></strong>
-	<p>IT Entity - Application Software Products</p>
-	<p>ABC is the market leading enterprise software company in the not-for-profit (NFP) sector.</p>
-	<strong><%= label_tag 'Transaction Purpose:' %></strong>
-	<p>Strategic-Acquisition</p>
-	<p>ABC is looking to increase it's inorganic growth by acquiring complementary third-party software companies.</p>
+<%= label_tag 'ASI Enterprise Focus' %>
+<div class="wrapper_dropdown">
+  <select>
+    <option value="01">Financial Services Entity - Commercial Bank</option>
+    <option value="02">Financial Services Entity - Family &amp; Friends Investor</option>
+    <option value="03">Financial Services Entity - Individual Angel Investor</option>
+    <option value="04">Financial Services Entity - Angel Group Investor</option>
+    <option value="05">Financial Services Entity - Venture Capital (VC) Firm</option>
+    <option value="06">Financial Services Entity - Private Equity (PE) Firm</option>
+    <option value="07">Financial Services Entity - Hedge Fund Firm</option>
+    <option value="08">Financial Services Entity - Investment Bank</option>
+    <option value="09">IT Entity - Hardware Products</option>
+    <option value="10">IT Entity - System Software Products</option>
+    <option selected=true value="11">IT Entity - Application Software Products</option>
+    <option value="12">IT Entity - Variety of Products</option>
+    <option value="13">IT Entity - Business Analysis Services</option>
+    <option value="14">IT Entity - Network/System Integration Services</option>
+    <option value="15">IT Entity - Custom Software Development Services</option>
+    <option value="16">IT Entity - Variety of Services</option>
+    <option value="17">IT Entity - Hybrid Solutions Entity</option>
+  </select>
 </div>
+<br>
+<br>
+
+<%= label_tag 'Investment/Finanching Thesis Statement Part 1' %>
+<input value="ASI is the market leading enterprise software company in the not-for-profit (NFP) sector."></input>
+
+<br>
+<br>
+<hr>
+<br>
+
+<%= label_tag 'ASI Transaction Purpose' %>
+<div class="wrapper_dropdown">
+  <select>
+    <option selected=true value="01">Strategic-Acquisition</option>
+    <option value="02">Strategic-Merger</option>
+    <option value="03">Strategic-Divestiture</option>
+    <option value="04">Financial-Checking Account/Line of Credit</option>
+    <option value="05">Financial-Start-Up/Seed Funding</option>
+    <option value="06">Financial-Early Stage/Mezzanine Funding</option>
+    <option value="07">Financial-Late Stage/Growth Funding</option>
+    <option value="08">Financial-Initial Public Offering (IPO)</option>
+  </select>
+</div>
+
+<br>
+<br>
+
+<%= label_tag 'Investment/Finanching Thesis Statement Part 2' %>
+<input value="ASI is looking to increase its inorganic growth by acquiring complementary third-party software companies."></input>
