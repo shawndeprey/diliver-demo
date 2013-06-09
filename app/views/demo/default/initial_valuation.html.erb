@@ -1,60 +1,66 @@
-<p>Button for seller to agree to term sheet</p>
-<p>Valuation method is a dropdown</p>
-<h2>Initial Valuation - <em>Buyer performs a valuation on Seller.</em></h2>
-<strong><%= label_tag 'ABC Valuation Method' %></strong>
-<ul>
-	<li>Revenue Multiplier</li>
-	<li>EBITDA Multiplier</li>
-	<li>Other</li>
-</ul>
+<%= label_tag 'ABC Valuation Method' %>
+<div class="wrapper_dropdown">
+  <select>
+    <option selected=true value="01">Revenue Multiplier</option>
+    <option value="02">EBITDA Multiplier</option>
+    <option value="03">Other</option>
+  </select>
+</div>
 
-<table>
-	<tr>
-		<td>ABC Initial Valuation (of XYZ) = </td>
-		<td>$1,000,000</td>
-		<td>100%</td>
-	</tr>
+<%= tag("br", nil, true) %>
+<%= tag("br", nil, true) %>
+
+<table class="horizontal_minimal" summary="Initial Valuation">
+	<thread>
+		<tr>
+			<th scope="col">ABC Initial Valuation (of XYZ) = </th>
+			<th scope="col">$1,000,000</th>
+			<th scope="col">100%</th>
+		</tr>
+	</thread>
 </table>
 
 <%= tag("br", nil, true) %>
 
-<strong><%= label_tag 'Term Sheet' %></strong>
-<table>
-	<tr>
-		<th>Source</th>
-		<th>Amount</th>
-		<th>Percent</th>
-	</tr>
-	<tr>
-		<td>Cash</td>
-		<td>$100,000</td>
-		<td>10%</td>
-	</tr>
-	<tr>
-		<td>Stock</td>
-		<td>$400,000</td>
-		<td>40%</td>
-	</tr>
-	<tr>
-		<td>Note</td>
-		<td>$200,000</td>
-		<td>20%</td>
-	</tr>
-	<tr>
-		<td>Earnout</td>
-		<td>$300,000</td>
-		<td>30%</td>
-	</tr>
-	<tr>
-		<td>Tax Benefit</td>
-		<td>$0</td>
-		<td>0%</td>
-	</tr>
-	<tr>
-		<td>Total</td>
-		<td>$1,000,000</td>
-		<td>100%</td>
-	</tr>
+<%= label_tag 'Term Sheet' %>
+<table class="horizontal_minimal" summary="Term Sheet">
+	<thread>
+		<tr>
+			<th scope="col">Source</th>
+			<th scope="col">Amount</th>
+			<th scope="col">Percent</th>
+		</tr>
+	</thread>
+	<tbody>
+		<tr>
+			<td>Cash</td>
+			<td>$100,000</td>
+			<td>10%</td>
+		</tr>
+		<tr>
+			<td>Stock</td>
+			<td>$400,000</td>
+			<td>40%</td>
+		</tr>
+		<tr>
+			<td>Note</td>
+			<td>$200,000</td>
+			<td>20%</td>
+		</tr>
+		<tr>
+			<td>Earnout</td>
+			<td>$300,000</td>
+			<td>30%</td>
+		</tr>
+		<tr>
+			<td>Tax Benefit</td>
+			<td>$0</td>
+			<td>0%</td>
+		</tr>
+		<tr>
+			<td>Total</td>
+			<td>$1,000,000</td>
+			<td>100%</td>
+		</tr>
+	</tbody>
 </table>
-
-<%= tag("br", nil, true) %>
