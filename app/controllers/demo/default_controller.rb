@@ -9,62 +9,78 @@ class Demo::DefaultController < ApplicationController
 
   # GET /team-identification
   def team_identification
-    @page_state = {timeline:[{title:"Deal Team Identification", url:"/demo/team-identification", is_active:true},
-                             {title:"Transaction Analysis", url:"/demo/buyer-qualification", is_active:false},
-                             {title:"Screening", url:"/demo/seller-qualification", is_active:false},
-                             {title:"Qualification", url:"/demo/seller-qualification", is_active:false},
-                             {title:"Preliminary Due Diligence", url:"/demo/preliminary-due-diligence", is_active:false},
-                             {title:"Initial Valuation", url:"/demo/initial-valuation", is_active:false},
-                             {title:"Confirmatory Due Diligence", url:"/demo/confirmatory-due-diligence", is_active:false},
-                             {title:"Final Valuation", url:"/demo/final-valuation", is_active:false}],
-                   next_button:[{title:"Proceed to Buyer Qualification", url:"/demo/buyer-qualification"}]}
+    @page_state = {timeline:[{title:"Deal Team Identification", url:"/demo/team-identification", is_active:true, is_current:true},
+                             {title:"Transaction Analysis", url:"/demo/transaction-analysis", is_active:false, is_current:false},
+                             {title:"Screening", url:"/demo/screening", is_active:false, is_current:false},
+                             {title:"Qualification", url:"/demo/qualification", is_active:false, is_current:false},
+                             {title:"Preliminary Due Diligence", url:"/demo/preliminary-due-diligence", is_active:false, is_current:false},
+                             {title:"Initial Valuation", url:"/demo/initial-valuation", is_active:false, is_current:false},
+                             {title:"Confirmatory Due Diligence", url:"/demo/confirmatory-due-diligence", is_active:false, is_current:false},
+                             {title:"Final Valuation", url:"/demo/final-valuation", is_active:false, is_current:false}],
+                   next_button:[{title:"Proceed to Transaction Analysis", url:"/demo/transaction-analysis"}]}
   	respond_to do |format|
       format.html { } # team_identification.html.erb
     end
   end
 
-  # GET /buyer-qualification
-  def buyer_qualification
-    @page_state = {timeline:[{title:"Deal Team Identification", url:"/demo/team-identification", is_active:true},
-                             {title:"Transaction Analysis", url:"/demo/buyer-qualification", is_active:true},
-                             {title:"Screening", url:"/demo/seller-qualification", is_active:false},
-                             {title:"Qualification", url:"/demo/seller-qualification", is_active:false},
-                             {title:"Preliminary Due Diligence", url:"/demo/preliminary-due-diligence", is_active:false},
-                             {title:"Initial Valuation", url:"/demo/initial-valuation", is_active:false},
-                             {title:"Confirmatory Due Diligence", url:"/demo/confirmatory-due-diligence", is_active:false},
-                             {title:"Final Valuation", url:"/demo/final-valuation", is_active:false}],
-                   next_button:[{title:"Proceed to Seller Qualification", url:"/demo/seller-qualification"}]}
+  # GET /transaction-analysis
+  def transaction_analysis
+    @page_state = {timeline:[{title:"Deal Team Identification", url:"/demo/team-identification", is_active:true, is_current:false},
+                             {title:"Transaction Analysis", url:"/demo/transaction-analysis", is_active:true, is_current:true},
+                             {title:"Screening", url:"/demo/screening", is_active:false, is_current:false},
+                             {title:"Qualification", url:"/demo/qualification", is_active:false, is_current:false},
+                             {title:"Preliminary Due Diligence", url:"/demo/preliminary-due-diligence", is_active:false, is_current:false},
+                             {title:"Initial Valuation", url:"/demo/initial-valuation", is_active:false, is_current:false},
+                             {title:"Confirmatory Due Diligence", url:"/demo/confirmatory-due-diligence", is_active:false, is_current:false},
+                             {title:"Final Valuation", url:"/demo/final-valuation", is_active:false, is_current:false}],
+                   next_button:[{title:"Proceed to Screening", url:"/demo/screening"}]}
     respond_to do |format|
-      format.html { } # buyer_qualification.html.erb
+      format.html { } # transaction_analysis.html.erb
     end
   end
 
-  # GET /seller-qualification
-  def seller_qualification
-    @page_state = {timeline:[{title:"Deal Team Identification", url:"/demo/team-identification", is_active:true},
-                             {title:"Transaction Analysis", url:"/demo/buyer-qualification", is_active:true},
-                             {title:"Screening", url:"/demo/seller-qualification", is_active:true},
-                             {title:"Qualification", url:"/demo/seller-qualification", is_active:true},
-                             {title:"Preliminary Due Diligence", url:"/demo/preliminary-due-diligence", is_active:false},
-                             {title:"Initial Valuation", url:"/demo/initial-valuation", is_active:false},
-                             {title:"Confirmatory Due Diligence", url:"/demo/confirmatory-due-diligence", is_active:false},
-                             {title:"Final Valuation", url:"/demo/final-valuation", is_active:false}],
+  # GET /screening
+  def screening
+    @page_state = {timeline:[{title:"Deal Team Identification", url:"/demo/team-identification", is_active:true, is_current:false},
+                             {title:"Transaction Analysis", url:"/demo/transaction-analysis", is_active:true, is_current:false},
+                             {title:"Screening", url:"/demo/screening", is_active:true, is_current:true},
+                             {title:"Qualification", url:"/demo/qualification", is_active:false, is_current:false},
+                             {title:"Preliminary Due Diligence", url:"/demo/preliminary-due-diligence", is_active:false, is_current:false},
+                             {title:"Initial Valuation", url:"/demo/initial-valuation", is_active:false, is_current:false},
+                             {title:"Confirmatory Due Diligence", url:"/demo/confirmatory-due-diligence", is_active:false, is_current:false},
+                             {title:"Final Valuation", url:"/demo/final-valuation", is_active:false, is_current:false}],
+                   next_button:[{title:"Proceed to Qualification", url:"/demo/qualification"}]}
+    respond_to do |format|
+      format.html { } # screening.html.erb
+    end
+  end
+
+  # GET /qualification
+  def qualification
+    @page_state = {timeline:[{title:"Deal Team Identification", url:"/demo/team-identification", is_active:true, is_current:false},
+                             {title:"Transaction Analysis", url:"/demo/transaction-analysis", is_active:true, is_current:false},
+                             {title:"Screening", url:"/demo/screening", is_active:true, is_current:false},
+                             {title:"Qualification", url:"/demo/qualification", is_active:true, is_current:true},
+                             {title:"Preliminary Due Diligence", url:"/demo/preliminary-due-diligence", is_active:false, is_current:false},
+                             {title:"Initial Valuation", url:"/demo/initial-valuation", is_active:false, is_current:false},
+                             {title:"Confirmatory Due Diligence", url:"/demo/confirmatory-due-diligence", is_active:false, is_current:false},
+                             {title:"Final Valuation", url:"/demo/final-valuation", is_active:false, is_current:false}],
                    next_button:[{title:"Proceed to Preliminary Due Diligence", url:"/demo/preliminary-due-diligence"}]}
     respond_to do |format|
-      format.html { } # seller_qualification.html.erb
+      format.html { } # qualification.html.erb
     end
   end
 
   # GET /preliminary-due-diligence
   def preliminary_due_diligence
-    @page_state = {timeline:[{title:"Deal Team Identification", url:"/demo/team-identification", is_active:true},
-                             {title:"Transaction Analysis", url:"/demo/buyer-qualification", is_active:true},
-                             {title:"Screening", url:"/demo/seller-qualification", is_active:true},
-                             {title:"Qualification", url:"/demo/seller-qualification", is_active:true},
-                             {title:"Preliminary Due Diligence", url:"/demo/preliminary-due-diligence", is_active:true},
-                             {title:"Initial Valuation", url:"/demo/initial-valuation", is_active:false},
-                             {title:"Confirmatory Due Diligence", url:"/demo/confirmatory-due-diligence", is_active:false},
-                             {title:"Final Valuation", url:"/demo/final-valuation", is_active:false}],
+    @page_state = {timeline:[{title:"Deal Team Identification", url:"/demo/team-identification", is_active:true, is_current:false},
+                             {title:"Transaction Analysis", url:"/demo/transaction-analysis", is_active:true, is_current:false},
+                             {title:"Screening", url:"/demo/screening", is_active:true, is_current:false},
+                             {title:"Qualification", url:"/demo/qualification", is_active:true, is_current:false},
+                             {title:"Preliminary Due Diligence", url:"/demo/preliminary-due-diligence", is_active:true, is_current:true},
+                             {title:"Initial Valuation", url:"/demo/initial-valuation", is_active:false, is_current:false},
+                             {title:"Confirmatory Due Diligence", url:"/demo/confirmatory-due-diligence", is_active:false, is_current:false},
+                             {title:"Final Valuation", url:"/demo/final-valuation", is_active:false, is_current:false}],
                    next_button:[{title:"Proceed to Initial Valuation", url:"/demo/initial-valuation"}]}
     respond_to do |format|
       format.html { } # preliminary_due_diligence.html.erb
@@ -73,14 +89,14 @@ class Demo::DefaultController < ApplicationController
 
   # GET /initial-valuation
   def initial_valuation
-    @page_state = {timeline:[{title:"Deal Team Identification", url:"/demo/team-identification", is_active:true},
-                             {title:"Transaction Analysis", url:"/demo/buyer-qualification", is_active:true},
-                             {title:"Screening", url:"/demo/seller-qualification", is_active:true},
-                             {title:"Qualification", url:"/demo/seller-qualification", is_active:true},
-                             {title:"Preliminary Due Diligence", url:"/demo/preliminary-due-diligence", is_active:true},
-                             {title:"Initial Valuation", url:"/demo/initial-valuation", is_active:true},
-                             {title:"Confirmatory Due Diligence", url:"/demo/confirmatory-due-diligence", is_active:false},
-                             {title:"Final Valuation", url:"/demo/final-valuation", is_active:false}],
+    @page_state = {timeline:[{title:"Deal Team Identification", url:"/demo/team-identification", is_active:true, is_current:false},
+                             {title:"Transaction Analysis", url:"/demo/transaction-analysis", is_active:true, is_current:false},
+                             {title:"Screening", url:"/demo/screening", is_active:true, is_current:false},
+                             {title:"Qualification", url:"/demo/qualification", is_active:true, is_current:false},
+                             {title:"Preliminary Due Diligence", url:"/demo/preliminary-due-diligence", is_active:true, is_current:false},
+                             {title:"Initial Valuation", url:"/demo/initial-valuation", is_active:true, is_current:true},
+                             {title:"Confirmatory Due Diligence", url:"/demo/confirmatory-due-diligence", is_active:false, is_current:false},
+                             {title:"Final Valuation", url:"/demo/final-valuation", is_active:false, is_current:false}],
                    next_button:[{title:"Proceed to Confirmatory Due Diligence", url:"/demo/confirmatory-due-diligence"}]}
     respond_to do |format|
       format.html { } # initial_valuation.html.erb
@@ -89,14 +105,14 @@ class Demo::DefaultController < ApplicationController
 
   # GET /confirmatory-due-diligence
   def confirmatory_due_diligence
-    @page_state = {timeline:[{title:"Deal Team Identification", url:"/demo/team-identification", is_active:true},
-                             {title:"Transaction Analysis", url:"/demo/buyer-qualification", is_active:true},
-                             {title:"Screening", url:"/demo/seller-qualification", is_active:true},
-                             {title:"Qualification", url:"/demo/seller-qualification", is_active:true},
-                             {title:"Preliminary Due Diligence", url:"/demo/preliminary-due-diligence", is_active:true},
-                             {title:"Initial Valuation", url:"/demo/initial-valuation", is_active:true},
-                             {title:"Confirmatory Due Diligence", url:"/demo/confirmatory-due-diligence", is_active:true},
-                             {title:"Final Valuation", url:"/demo/final-valuation", is_active:false}],
+    @page_state = {timeline:[{title:"Deal Team Identification", url:"/demo/team-identification", is_active:true, is_current:false},
+                             {title:"Transaction Analysis", url:"/demo/transaction-analysis", is_active:true, is_current:false},
+                             {title:"Screening", url:"/demo/screening", is_active:true, is_current:false},
+                             {title:"Qualification", url:"/demo/qualification", is_active:true, is_current:false},
+                             {title:"Preliminary Due Diligence", url:"/demo/preliminary-due-diligence", is_active:true, is_current:false},
+                             {title:"Initial Valuation", url:"/demo/initial-valuation", is_active:true, is_current:false},
+                             {title:"Confirmatory Due Diligence", url:"/demo/confirmatory-due-diligence", is_active:true, is_current:true},
+                             {title:"Final Valuation", url:"/demo/final-valuation", is_active:false, is_current:false}],
                    next_button:[{title:"Proceed to Final Valuation", url:"/demo/final-valuation"}]}
     respond_to do |format|
       format.html { } # confirmatory_due_diligence.html.erb
@@ -105,14 +121,14 @@ class Demo::DefaultController < ApplicationController
 
   # GET /final-valuation
   def final_valuation
-    @page_state = {timeline:[{title:"Deal Team Identification", url:"/demo/team-identification", is_active:true},
-                             {title:"Transaction Analysis", url:"/demo/buyer-qualification", is_active:true},
-                             {title:"Screening", url:"/demo/seller-qualification", is_active:true},
-                             {title:"Qualification", url:"/demo/seller-qualification", is_active:true},
-                             {title:"Preliminary Due Diligence", url:"/demo/preliminary-due-diligence", is_active:true},
-                             {title:"Initial Valuation", url:"/demo/initial-valuation", is_active:true},
-                             {title:"Confirmatory Due Diligence", url:"/demo/confirmatory-due-diligence", is_active:true},
-                             {title:"Final Valuation", url:"/demo/final-valuation", is_active:true}],
+    @page_state = {timeline:[{title:"Deal Team Identification", url:"/demo/team-identification", is_active:true, is_current:false},
+                             {title:"Transaction Analysis", url:"/demo/transaction-analysis", is_active:true, is_current:false},
+                             {title:"Screening", url:"/demo/screening", is_active:true, is_current:false},
+                             {title:"Qualification", url:"/demo/qualification", is_active:true, is_current:false},
+                             {title:"Preliminary Due Diligence", url:"/demo/preliminary-due-diligence", is_active:true, is_current:false},
+                             {title:"Initial Valuation", url:"/demo/initial-valuation", is_active:true, is_current:false},
+                             {title:"Confirmatory Due Diligence", url:"/demo/confirmatory-due-diligence", is_active:true, is_current:false},
+                             {title:"Final Valuation", url:"/demo/final-valuation", is_active:true, is_current:true}],
                    next_button:[{title:"Submit", url:"/demo"}]}
     respond_to do |format|
       format.html { } # final_valuation.html.erb
