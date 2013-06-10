@@ -2,8 +2,9 @@ Diliver::Application.routes.draw do
   namespace :demo do
     get '/' => 'default#index'
     get '/team-identification' => 'default#team_identification'
-    get '/buyer-qualification' => 'default#buyer_qualification'
-    get '/seller-qualification' => 'default#seller_qualification'
+    get '/transaction-analysis' => 'default#transaction_analysis'
+    get '/screening' => 'default#screening'
+    get '/qualification' => 'default#qualification'
     get '/preliminary-due-diligence' => 'default#preliminary_due_diligence'
     get '/initial-valuation' => 'default#initial_valuation'
     get '/confirmatory-due-diligence' => 'default#confirmatory_due_diligence'

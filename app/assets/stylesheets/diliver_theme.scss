@@ -227,7 +227,16 @@ body
 		{
 			color: #1b3764;
 		}
-		
+
+		a span.nav_current
+		{
+			padding-left: 19px;
+			padding-top: 1px;
+			padding-bottom: 1px;
+			background: url(/images/arrow-right.png) no-repeat;
+			background-position: center center;
+		}
+
 		ul
 		{
 			text-decoration: none;
