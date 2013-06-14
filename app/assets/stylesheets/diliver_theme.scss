@@ -9,22 +9,93 @@ body
 	font-family: "Trebuchet MS", helvetica, sans-serif;
 	color: #1b3764;
 	font-size: 14px;
-	height: 200px;
-	z-index: -10000;
-	background: rgb(216,216,216); /* Old browsers */
-	background: -moz-linear-gradient(top,  rgba(216,216,216,1) 0%, rgba(255,255,255,1) 100%) no-repeat; /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(216,216,216,1)), color-stop(100%,rgba(255,255,255,1))) no-repeat; /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  rgba(216,216,216,1) 0%,rgba(255,255,255,1) 100%) no-repeat; /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  rgba(216,216,216,1) 0%,rgba(255,255,255,1) 100%) no-repeat; /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  rgba(216,216,216,1) 0%,rgba(255,255,255,1) 100%) no-repeat; /* IE10+ */
-	background: linear-gradient(to bottom,  rgba(216,216,216,1) 0%,rgba(255,255,255,1) 100%) no-repeat; /* W3C */
+	background: transparent;
+
+	div.background
+	{
+		position: absolute;
+		width: 100%;
+		height: 200px;
+		z-index: -10000;
+		background: rgb(216,216,216); /* Old browsers */
+		background: -moz-linear-gradient(top,  rgba(216,216,216,1) 0%, rgba(255,255,255,1) 100%) no-repeat; /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(216,216,216,1)), color-stop(100%,rgba(255,255,255,1))) no-repeat; /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(216,216,216,1) 0%,rgba(255,255,255,1) 100%) no-repeat; /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(216,216,216,1) 0%,rgba(255,255,255,1) 100%) no-repeat; /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(216,216,216,1) 0%,rgba(255,255,255,1) 100%) no-repeat; /* IE10+ */
+		background: linear-gradient(to bottom,  rgba(216,216,216,1) 0%,rgba(255,255,255,1) 100%) no-repeat; /* W3C */
+	}
+
+	h1
+	{
+		text-align: center;
+	}
 
 	img
 	{
 		border: none;
 	}
 
-	div.dock
+	div.transaction_analysis
+	{
+		float: left;
+		width: 50%;
+	}
+
+	div.screening
+	{
+		float: left;
+		width: 50%;
+	}
+
+	div.scorecard
+	{
+		position: absolute;
+	}
+
+	div.hide
+	{
+		display: none;
+	}
+
+	div.final_evaluation
+	{
+		float: left;
+		width: 50%;
+	}
+
+	div.modal_left
+	{
+		-webkit-transition: 0.5s ease;
+		-moz-transition: 0.5s ease;
+		-o-transition: 0.5s ease;
+		-ms-transition: 0.5s ease;
+		transition: 0.5s ease;
+		padding: 25px 50px;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		-o-border-radius: 10px;
+		-ms-border-radius: 10px;
+		border-radius: 10px;
+		border: 1px solid #CAD1DB;
+		background: #E7EFF7;
+		text-align: center;
+		float: left;
+		width: 50%;
+	}
+
+	div.modal_left:hover
+	{
+		-webkit-transition: 0.3s ease;
+		-moz-transition: 0.3s ease;
+		-o-transition: 0.3s ease;
+		-ms-transition: 0.3s ease;
+		transition: 0.3s ease;
+		border: 1px solid #B4C1D4;
+		box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+	}
+
+	div.modal
 	{
 		-webkit-transition: 0.5s ease;
 		-moz-transition: 0.5s ease;
@@ -32,7 +103,41 @@ body
 		-ms-transition: 0.5s ease;
 		transition: 0.5s ease;
 		position: fixed;
+		right: 15px;
+		bottom: 100px;
+		padding: 25px 50px;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		-o-border-radius: 10px;
+		-ms-border-radius: 10px;
+		border-radius: 10px;
+		border: 1px solid #CAD1DB;
+		background: #E7EFF7;
+		text-align: center;
+	}
+
+	div.modal:hover
+	{
+		-webkit-transition: 0.3s ease;
+		-moz-transition: 0.3s ease;
+		-o-transition: 0.3s ease;
+		-ms-transition: 0.3s ease;
+		transition: 0.3s ease;
+		border: 1px solid #B4C1D4;
+		box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+	}
+
+	div.dock
+	{
+		z-index: 100000;
+		-webkit-transition: 0.5s ease;
+		-moz-transition: 0.5s ease;
+		-o-transition: 0.5s ease;
+		-ms-transition: 0.5s ease;
+		transition: 0.5s ease;
+		position: fixed;
 		right: 0;
+		height: 555px;
 		top: 150px;
 		padding: 0px 25px;
 		-webkit-border-bottom-left-radius: 10px;
@@ -42,11 +147,11 @@ body
 		border-bottom-left-radius: 10px;
 		border: 1px solid #CAD1DB;
 		background: #E7EFF7;
-		-moz-transform: translateX(412px);
-		-webkit-transform: translateX(412px);
-		-o-transform: translateX(412px);
-		-ms-transform: translateX(412px);
-		transform: translateX(412px);
+		-moz-transform: translateX(400px);
+		-webkit-transform: translateX(400px);
+		-o-transform: translateX(400px);
+		-ms-transform: translateX(400px);
+		transform: translateX(400px);
 
 		.tab
 		{
@@ -56,7 +161,7 @@ body
 			-ms-transition: 0.4s ease;
 			transition: 0.4s ease;
 			position: relative;
-			padding: 25px 0px;
+			padding: 5px 0px;
 			width: 55px;
 			top: -1px;
 			-webkit-border-top-left-radius: 10px;
@@ -78,12 +183,26 @@ body
 			-o-transform: translateX(-81px);
 			-ms-transform: translateX(-81px);
 			transform: translateX(-81px);
+
+			div.arrows
+			{
+				position: relative;
+				img
+				{
+					position: relative;
+					padding-left: 25px;
+					padding-top: 1px;
+					padding-bottom: 1px;
+					top: 2px;
+					right: 2px;
+				}
+			}
 		}
 
 		ul
 		{
 			position: relative;
-			top: -30px;
+			top: -65px;
 			text-decoration: none;
 			list-style: none;
 			margin: 0;
@@ -92,7 +211,7 @@ body
 			{
 				margin: 5px 0px;
 				padding: 2px 5px;
-				text-align: center;
+				text-align: left;
 			}
 
 			li:hover
@@ -183,6 +302,41 @@ body
 		outline: none;
 	}
 
+	textarea
+	{
+		font-family: "Trebuchet MS", helvetica, sans-serif;
+		font-size: 14px;
+		text-overflow: ellipsis;
+		padding: 5px;
+		margin: 5px;
+		width: 50em;
+		height: 5em;
+		top: -5px;
+		color: #1b3764;
+		resize: none;
+		background: #fff;
+		border-radius: 7px;
+		border: 1px solid rgba(0,0,0,0.15);
+		box-shadow: 0 1px 1px rgba(50,50,50,0.1);
+		outline: none;
+	}
+
+	textarea:hover
+	{
+		color: #1b3764;
+		cursor: pointer;
+		-moz-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+		-webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+		-o-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+		-ms-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+		box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+	}
+
+	textarea.short
+	{
+		height: 2.5em;
+	}
+
 	input[type=text]:hover
 	{
 		color: #1b3764;
@@ -213,6 +367,11 @@ body
 	input[type=text].wide_input
 	{
 		width: 50em;
+	}
+
+	input[type=text].half_wide_input
+	{
+		width: 25em;
 	}
 
 	label
@@ -490,6 +649,15 @@ body
 		img
 		{
 			padding: 10px;
+		}
+
+		div.app_title
+		{
+			position: absolute;
+			top: 15px;
+			width: 50%;
+			left: 25%;
+			text-align: center;
 		}
 
 		div.user_info
