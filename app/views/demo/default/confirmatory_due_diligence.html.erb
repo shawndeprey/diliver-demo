@@ -1,1159 +1,1070 @@
 <div class="dock">
 	<div class="tab">
+		<div class="arrows">
+			<img src="/images/arrow-right.png"/>
+			<img src="/images/arrow-right.png"/>
+			<img src="/images/arrow-right.png"/>
+		</div>
 	</div>
-		<ul>
-			<li><a href="#">Enterprise Scorecard</a></li>
-			<li><hr></li>
-			<li><a href="#">Human Resources Scorecard</a></li>
-			<li><hr></li>
-			<li><a href="#">Machine Resources Scorecard</a></li>
-			<li><hr></li>
-			<li><a href="#">Information Resources Scorecard</a></li>
-			<li><hr></li>
-			<li><a href="#">Financial Resources Scorecard</a></li>
-			<li><hr></li>
-			<li><a href="#">Intellectual Property Resources Scorecard</a></li>
-			<li><hr></li>
-			<li><a href="#">Facility Resources Scorecard</a></li>
-			<li><hr></li>
-			<li><a href="#">Board of Directors &amp; Advisors Interface Scorecard</a></li>
-			<li><hr></li>
-			<li><a href="#">Shareholders Interface Scorecard</a></li>
-			<li><hr></li>
-			<li><a href="#">Legal &amp; Regulatory Authorities Interface Scorecard</a></li>
-			<li><hr></li>
-			<li><a href="#">Supply Chain Interface Scorecard</a></li>
-			<li><hr></li>
-			<li><a href="#">Competitors Interface Scorecard</a></li>
-			<li><hr></li>
-			<li><a href="#">Prospects Interface Scorecard</a></li>
-			<li><hr></li>
-			<li><a href="#">Channel Interface Scorecard</a></li>
-			<li><hr></li>
-			<li><a href="#">Customers Interface Scorecard</a></li>
-			<li><hr></li>
-			<li><a href="#">Valuation Adjustment Range</a></li>
-		</ul>
+	<ul>
+		<li><a onclick="diliver.toggleScorecard('hrbs')" href="#">1) Human Resources Scorecard</a></li>
+		<li><hr></li>
+		<li><a onclick="diliver.toggleScorecard('mrbs')" href="#">2) Machine Resources Scorecard</a></li>
+		<li><hr></li>
+		<li><a onclick="diliver.toggleScorecard('irbs')" href="#">3) Information Resources Scorecard</a></li>
+		<li><hr></li>
+		<li><a onclick="diliver.toggleScorecard('firbs')" href="#">4) Financial Resources Scorecard</a></li>
+		<li><hr></li>
+		<li><a onclick="diliver.toggleScorecard('iprbs')" href="#">5) Intellectual Property Resources Scorecard</a></li>
+		<li><hr></li>
+		<li><a onclick="diliver.toggleScorecard('frbs')" href="#">6) Facility Resources Scorecard</a></li>
+		<li><hr></li>
+		<li><a onclick="diliver.toggleScorecard('bibs')" href="#">7) Board of Directors &amp; Advisors Interface Scorecard</a></li>
+		<li><hr></li>
+		<li><a onclick="diliver.toggleScorecard('sibs')" href="#">8) Shareholders Interface Scorecard</a></li>
+		<li><hr></li>
+		<li><a onclick="diliver.toggleScorecard('aibs')" href="#">9) Legal &amp; Regulatory Authorities Interface Scorecard</a></li>
+		<li><hr></li>
+		<li><a onclick="diliver.toggleScorecard('scibs')" href="#">10) Supply Chain Interface Scorecard</a></li>
+		<li><hr></li>
+		<li><a onclick="diliver.toggleScorecard('coibs')" href="#">11) Competitors Interface Scorecard</a></li>
+		<li><hr></li>
+		<li><a onclick="diliver.toggleScorecard('pibs')" href="#">12) Prospects Interface Scorecard</a></li>
+		<li><hr></li>
+		<li><a onclick="diliver.toggleScorecard('chibs')" href="#">13) Channel Interface Scorecard</a></li>
+		<li><hr></li>
+		<li><a onclick="diliver.toggleScorecard('cibs')" href="#">14) Customers Interface Scorecard</a></li>
+		<li><hr></li>
+		<li><a onclick="diliver.toggleScorecard('ewbs')" href="#">Enterprise Scorecard</a></li>
+	</ul>
 </div>
 
-<h3>Enterprise Wide Buyer Scorecard</h3>
-<table class="horizontal_minimal" summary="Enterprise Wide Buyer Scorecard">
-	<thread>
-		<tr>
-			<th scope="col">Appraisal Categories</th>
-			<th scope="col">Category Score</th>
-			<th scope="col">Category Grade</th>
-			<th scope="col">Category Weight</th>
-			<th scope="col">Weighted Category Score</th>
-		</tr>
-	</thread>
-	<tbody>
-		<tr>
-			<td>Human Resources</td>
-			<td>85.25</td>
-			<td>B</td>
-			<td>10%</td>
-			<td>8.53</td>
-		</tr>
-		<tr>
-			<td>Machine Resources</td>
-			<td>88.50</td>
-			<td>B</td>
-			<td>5%</td>
-			<td>4.43</td>
-		</tr>
-		<tr>
-			<td>Information Resources</td>
-			<td>77.75</td>
-			<td>C</td>
-			<td>5%</td>
-			<td>3.89</td>
-		</tr>
-		<tr>
-			<td>Financial Resources</td>
-			<td>93.00</td>
-			<td>A</td>
-			<td>10%</td>
-			<td>9.30</td>
-		</tr>
-		<tr>
-			<td>Intellectual Property Resources</td>
-			<td>88.25</td>
-			<td>B</td>
-			<td>10%</td>
-			<td>8.83</td>
-		</tr>
-		<tr>
-			<td>Facility Resources</td>
-			<td>90.00</td>
-			<td>A</td>
-			<td>5%</td>
-			<td>4.50</td>
-		</tr>
-		<tr><td colspan="5"><strong>Subtotals</strong></td></tr>
-		<tr>
-			<td>Board of Directors &amp; Advisors Interface</td>
-			<td>59.25</td>
-			<td>D</td>
-			<td>5%</td>
-			<td>2.96</td>
-		</tr>
-		<tr>
-			<td>Shareholders Interface</td>
-			<td>85.00</td>
-			<td>B</td>
-			<td>5%</td>
-			<td>4.25</td>
-		</tr>
-		<tr>
-			<td>Legal &amp; Regulatory Authorities Interface</td>
-			<td>89.00</td>
-			<td>B</td>
-			<td>5%</td>
-			<td>4.45</td>
-		</tr>
-		<tr>
-			<td>Supply Chain Interface</td>
-			<td>92.00</td>
-			<td>A</td>
-			<td>5%</td>
-			<td>4.60</td>
-		</tr>
-		<tr>
-			<td>Competitors Interface</td>
-			<td>85.00</td>
-			<td>B</td>
-			<td>5%</td>
-			<td>8.50</td>
-		</tr>
-		<tr>
-			<td>Prospects Interface</td>
-			<td>87.50</td>
-			<td>B</td>
-			<td>10%</td>
-			<td>4.38</td>
-		</tr>
-		<tr>
-			<td>Channel Interface</td>
-			<td>93.00</td>
-			<td>A</td>
-			<td>5%</td>
-			<td>4.65</td>
-		</tr>
-		<tr>
-			<td>Customers Interface</td>
-			<td>91.00</td>
-			<td>A</td>
-			<td>15%</td>
-			<td>13.65</td>
-		</tr>
-		<tr><td colspan="5"><strong>Subtotals</strong></td></tr>
-		<tr><td colspan="5"><strong>Total</strong></td></tr>
-	</tbody>
-</table>
+<div id="hrbs" class="scorecard">
+	<h3>Human Resources Buyer Scorecard</h3>
+	<table class="horizontal_minimal center" summary="Human Resources Buyer Scorecard">
+		<thread>
+			<tr>
+				<th scope="col">Appraisal Factors</th>
+				<th scope="col">Factor Weight</th>
+				<th scope="col">Factor Rating</th>
+				<th scope="col">Factor Grade</th>
+				<th scope="col">Factor Score</th>
+				<th scope="col">Weighted Factor Score</th>
+				<th scope="col">Comments</th>
+			</tr>
+		</thread>
+		<tbody>
+			<tr>
+				<td>College/University Degrees</td>
+				<td>20%</td>
+				<td>2</td>
+				<td>B</td>
+				<td>85</td>
+				<td>12.75</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Professional Training/Certifications</td>
+				<td>20%</td>
+				<td>3</td>
+				<td>A</td>
+				<td>95</td>
+				<td>4.75</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Specialized Sector/Industry Work</td>
+				<td>20%</td>
+				<td>2</td>
+				<td>B</td>
+				<td>85</td>
+				<td>4.25</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Career Development/Mentoring Programs</td>
+				<td>20%</td>
+				<td>3</td>
+				<td>A</td>
+				<td>95</td>
+				<td>4.75</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Employee/Contractor Staff Headcount</td>
+				<td>20%</td>
+				<td>2</td>
+				<td>B</td>
+				<td>85</td>
+				<td>4.25</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr><td colspan="7"><strong>Total</strong></td></tr>
+		</tbody>
+	</table>
+</div>
 
-<br>
+<div id="mrbs" class="scorecard hide">
+	<h3>Machine Resources Buyer Scorecard</h3>
+	<table class="horizontal_minimal center" summary="Machine Resources Buyer Scorecard">
+		<thread>
+			<tr>
+				<th scope="col">Appraisal Factors</th>
+				<th scope="col">Factor Weight</th>
+				<th scope="col">Factor Rating</th>
+				<th scope="col">Factor Grade</th>
+				<th scope="col">Factor Score</th>
+				<th scope="col">Weighted Factor Score</th>
+				<th scope="col">Comments</th>
+			</tr>
+		</thread>
+		<tbody>
+			<tr>
+				<td>Wireless Access Accounts</td>
+				<td>20%</td>
+				<td>2</td>
+				<td>B</td>
+				<td>85</td>
+				<td>12.75</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Standard Corporate Applications</td>
+				<td>20%</td>
+				<td>3</td>
+				<td>A</td>
+				<td>95</td>
+				<td>4.75</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Private Social Networking Software</td>
+				<td>20%</td>
+				<td>2</td>
+				<td>B</td>
+				<td>85</td>
+				<td>4.25</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Performance Management Software</td>
+				<td>20%</td>
+				<td>3</td>
+				<td>A</td>
+				<td>95</td>
+				<td>4.75</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Project Management Software</td>
+				<td>20%</td>
+				<td>2</td>
+				<td>B</td>
+				<td>85</td>
+				<td>4.25</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr><td colspan="7"><strong>Total</strong></td></tr>
+		</tbody>
+	</table>
+</div>
 
-<h3>Human Resources Buyer Scorecard</h3>
-<table class="horizontal_minimal" summary="Human Resources Buyer Scorecard">
-	<thread>
-		<tr>
-			<th scope="col">Appraisal Factors</th>
-			<th scope="col">Factor Weight</th>
-			<th scope="col">Factor Rating</th>
-			<th scope="col">Factor Grade</th>
-			<th scope="col">Factor Score</th>
-			<th scope="col">Weighted Factor Score</th>
-		</tr>
-	</thread>
-	<tbody>
-		<tr>
-			<td>College/University Degrees</td>
-			<td>20%</td>
-			<td>2</td>
-			<td>B</td>
-			<td>85</td>
-			<td>12.75</td>
-		</tr>
-		<tr>
-			<td>Professional Training/Certifications</td>
-			<td>20%</td>
-			<td>3</td>
-			<td>A</td>
-			<td>95</td>
-			<td>4.75</td>
-		</tr>
-		<tr>
-			<td>Specialized Sector/Industry Work</td>
-			<td>20%</td>
-			<td>2</td>
-			<td>B</td>
-			<td>85</td>
-			<td>4.25</td>
-		</tr>
-		<tr>
-			<td>Career Development/Mentoring Programs</td>
-			<td>20%</td>
-			<td>3</td>
-			<td>A</td>
-			<td>95</td>
-			<td>4.75</td>
-		</tr>
-		<tr>
-			<td>Employee/Contractor Staff Headcount</td>
-			<td>20%</td>
-			<td>2</td>
-			<td>B</td>
-			<td>85</td>
-			<td>4.25</td>
-		</tr>
-		<tr><td colspan="6"><strong>Total</strong></td></tr>
-	</tbody>
-</table>
+<div id="irbs" class="scorecard hide">
+	<h3>Information Resources Buyer Scorecard</h3>
+	<table class="horizontal_minimal center" summary="Information Resources Buyer Scorecard">
+		<thread>
+			<tr>
+				<th scope="col">Appraisal Factors</th>
+				<th scope="col">Factor Weight</th>
+				<th scope="col">Factor Rating</th>
+				<th scope="col">Factor Grade</th>
+				<th scope="col">Factor Score</th>
+				<th scope="col">Weighted Factor Score</th>
+				<th scope="col">Comments</th>
+			</tr>
+		</thread>
+		<tbody>
+			<tr>
+				<td>Data Dictionary Process Entries</td>
+				<td>20%</td>
+				<td>2</td>
+				<td>B</td>
+				<td>85</td>
+				<td>12.75</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Enterprise-Wide Business Plan</td>
+				<td>20%</td>
+				<td>3</td>
+				<td>A</td>
+				<td>95</td>
+				<td>4.75</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Deliverable &amp; Proposal Repository</td>
+				<td>20%</td>
+				<td>2</td>
+				<td>B</td>
+				<td>85</td>
+				<td>4.25</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Organizational Methodologies/Approaches</td>
+				<td>20%</td>
+				<td>3</td>
+				<td>A</td>
+				<td>95</td>
+				<td>4.75</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>ISO 9001 Certification</td>
+				<td>20%</td>
+				<td>2</td>
+				<td>B</td>
+				<td>85</td>
+				<td>4.25</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr><td colspan="7"><strong>Total</strong></td></tr>
+		</tbody>
+	</table>
+</div>
 
-<br>
+<div id="firbs" class="scorecard hide">
+	<h3>Financial Resources Buyer Scorecard</h3>
+	<table class="horizontal_minimal center" summary="Financial Resources Buyer Scorecard">
+		<thread>
+			<tr>
+				<th scope="col">Appraisal Factors</th>
+				<th scope="col">Factor Weight</th>
+				<th scope="col">Factor Rating</th>
+				<th scope="col">Factor Grade</th>
+				<th scope="col">Factor Score</th>
+				<th scope="col">Weighted Factor Score</th>
+				<th scope="col">Comments</th>
+			</tr>
+		</thread>
+		<tbody>
+			<tr>
+				<td>Retained Earnings</td>
+				<td>20%</td>
+				<td>2</td>
+				<td>B</td>
+				<td>85</td>
+				<td>12.75</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Backlog</td>
+				<td>20%</td>
+				<td>3</td>
+				<td>A</td>
+				<td>95</td>
+				<td>4.75</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Revenue</td>
+				<td>20%</td>
+				<td>2</td>
+				<td>B</td>
+				<td>85</td>
+				<td>4.25</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>EBITDA</td>
+				<td>20%</td>
+				<td>3</td>
+				<td>A</td>
+				<td>95</td>
+				<td>4.75</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Liquidity</td>
+				<td>20%</td>
+				<td>2</td>
+				<td>B</td>
+				<td>85</td>
+				<td>4.25</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr><td colspan="7"><strong>Total</strong></td></tr>
+		</tbody>
+	</table>
+</div>
 
-<h3>Machine Resources Buyer Scorecard</h3>
-<table class="horizontal_minimal" summary="Machine Resources Buyer Scorecard">
-	<thread>
-		<tr>
-			<th scope="col">Appraisal Factors</th>
-			<th scope="col">Factor Weight</th>
-			<th scope="col">Factor Rating</th>
-			<th scope="col">Factor Grade</th>
-			<th scope="col">Factor Score</th>
-			<th scope="col">Weighted Factor Score</th>
-		</tr>
-	</thread>
-	<tbody>
-		<tr>
-			<td>Wireless Access Accounts</td>
-			<td>20%</td>
-			<td>2</td>
-			<td>B</td>
-			<td>85</td>
-			<td>12.75</td>
-		</tr>
-		<tr>
-			<td>Standard Corporate Applications</td>
-			<td>20%</td>
-			<td>3</td>
-			<td>A</td>
-			<td>95</td>
-			<td>4.75</td>
-		</tr>
-		<tr>
-			<td>Private Social Networking Software</td>
-			<td>20%</td>
-			<td>2</td>
-			<td>B</td>
-			<td>85</td>
-			<td>4.25</td>
-		</tr>
-		<tr>
-			<td>Performance Management Software</td>
-			<td>20%</td>
-			<td>3</td>
-			<td>A</td>
-			<td>95</td>
-			<td>4.75</td>
-		</tr>
-		<tr>
-			<td>Project Management Software</td>
-			<td>20%</td>
-			<td>2</td>
-			<td>B</td>
-			<td>85</td>
-			<td>4.25</td>
-		</tr>
-		<tr><td colspan="6"><strong>Total</strong></td></tr>
-	</tbody>
-</table>
+<div id="iprbs" class="scorecard hide">
+	<h3>Intellectual Property Resources Buyer Scorecard</h3>
+	<table class="horizontal_minimal center" summary="Intellectual Property Resources Buyer Scorecard">
+		<thread>
+			<tr>
+				<th scope="col">Appraisal Factors</th>
+				<th scope="col">Factor Weight</th>
+				<th scope="col">Factor Rating</th>
+				<th scope="col">Factor Grade</th>
+				<th scope="col">Factor Score</th>
+				<th scope="col">Weighted Factor Score</th>
+				<th scope="col">Comments</th>
+			</tr>
+		</thread>
+		<tbody>
+			<tr>
+				<td>Filed Patents</td>
+				<td>20%</td>
+				<td>2</td>
+				<td>B</td>
+				<td>85</td>
+				<td>12.75</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Issued Patents</td>
+				<td>20%</td>
+				<td>3</td>
+				<td>A</td>
+				<td>95</td>
+				<td>4.75</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Issued Copyrights</td>
+				<td>20%</td>
+				<td>2</td>
+				<td>B</td>
+				<td>85</td>
+				<td>4.25</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Issued Trademarks</td>
+				<td>20%</td>
+				<td>3</td>
+				<td>A</td>
+				<td>95</td>
+				<td>4.75</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Sector/Industry Awards</td>
+				<td>20%</td>
+				<td>2</td>
+				<td>B</td>
+				<td>85</td>
+				<td>4.25</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr><td colspan="7"><strong>Total</strong></td></tr>
+		</tbody>
+	</table>
+</div>
 
-<br>
+<div id="frbs" class="scorecard hide">
+	<h3>Facility Resources Buyer Scorecard</h3>
+	<table class="horizontal_minimal center" summary="Facility Resources Buyer Scorecard">
+		<thread>
+			<tr>
+				<th scope="col">Appraisal Factors</th>
+				<th scope="col">Factor Weight</th>
+				<th scope="col">Factor Rating</th>
+				<th scope="col">Factor Grade</th>
+				<th scope="col">Factor Score</th>
+				<th scope="col">Weighted Factor Score</th>
+				<th scope="col">Comments</th>
+			</tr>
+		</thread>
+		<tbody>
+			<tr>
+				<td>English-Speaking Countries</td>
+				<td>20%</td>
+				<td>2</td>
+				<td>B</td>
+				<td>85</td>
+				<td>12.75</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Virtual Office Policy</td>
+				<td>20%</td>
+				<td>3</td>
+				<td>A</td>
+				<td>95</td>
+				<td>4.75</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Continental Presence</td>
+				<td>20%</td>
+				<td>2</td>
+				<td>B</td>
+				<td>85</td>
+				<td>4.25</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>US Regional Presence</td>
+				<td>20%</td>
+				<td>3</td>
+				<td>A</td>
+				<td>95</td>
+				<td>4.75</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>US State &amp; Local Community Presence</td>
+				<td>20%</td>
+				<td>2</td>
+				<td>B</td>
+				<td>85</td>
+				<td>4.25</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr><td colspan="7"><strong>Total</strong></td></tr>
+		</tbody>
+	</table>
+</div>
 
-<h3>Information Resources Buyer Scorecard</h3>
-<table class="horizontal_minimal" summary="Information Resources Buyer Scorecard">
-	<thread>
-		<tr>
-			<th scope="col">Appraisal Factors</th>
-			<th scope="col">Factor Weight</th>
-			<th scope="col">Factor Rating</th>
-			<th scope="col">Factor Grade</th>
-			<th scope="col">Factor Score</th>
-			<th scope="col">Weighted Factor Score</th>
-		</tr>
-	</thread>
-	<tbody>
-		<tr>
-			<td>Data Dictionary Process Entries</td>
-			<td>20%</td>
-			<td>2</td>
-			<td>B</td>
-			<td>85</td>
-			<td>12.75</td>
-		</tr>
-		<tr>
-			<td>Enterprise-Wide Business Plan</td>
-			<td>20%</td>
-			<td>3</td>
-			<td>A</td>
-			<td>95</td>
-			<td>4.75</td>
-		</tr>
-		<tr>
-			<td>Deliverable &amp; Proposal Repository</td>
-			<td>20%</td>
-			<td>2</td>
-			<td>B</td>
-			<td>85</td>
-			<td>4.25</td>
-		</tr>
-		<tr>
-			<td>Organizational Methodologies/Approaches</td>
-			<td>20%</td>
-			<td>3</td>
-			<td>A</td>
-			<td>95</td>
-			<td>4.75</td>
-		</tr>
-		<tr>
-			<td>ISO 9001 Certification</td>
-			<td>20%</td>
-			<td>2</td>
-			<td>B</td>
-			<td>85</td>
-			<td>4.25</td>
-		</tr>
-		<tr><td colspan="6"><strong>Total</strong></td></tr>
-	</tbody>
-</table>
+<div id="bibs" class="scorecard hide">
+	<h3>Board Interface Buyer Scorecard</h3>
+	<table class="horizontal_minimal center" summary="Board Interface Buyer Scorecard">
+		<thread>
+			<tr>
+				<th scope="col">Appraisal Factors</th>
+				<th scope="col">Factor Weight</th>
+				<th scope="col">Factor Rating</th>
+				<th scope="col">Factor Grade</th>
+				<th scope="col">Factor Score</th>
+				<th scope="col">Weighted Factor Score</th>
+				<th scope="col">Comments</th>
+			</tr>
+		</thread>
+		<tbody>
+			<tr>
+				<td>Business Excellence Framework</td>
+				<td>20%</td>
+				<td>2</td>
+				<td>B</td>
+				<td>85</td>
+				<td>12.75</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Organizational Structure</td>
+				<td>20%</td>
+				<td>3</td>
+				<td>A</td>
+				<td>95</td>
+				<td>4.75</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Organizational Roles &amp; Responsibilities</td>
+				<td>20%</td>
+				<td>2</td>
+				<td>B</td>
+				<td>85</td>
+				<td>4.25</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Board/Committee Activism</td>
+				<td>20%</td>
+				<td>3</td>
+				<td>A</td>
+				<td>95</td>
+				<td>4.75</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Board Member Relevance</td>
+				<td>20%</td>
+				<td>2</td>
+				<td>B</td>
+				<td>85</td>
+				<td>4.25</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr><td colspan="7"><strong>Total</strong></td></tr>
+		</tbody>
+	</table>
+</div>
 
-<br>
+<div id="sibs" class="scorecard hide">
+	<h3>Shareholders Interface Buyer Scorecard</h3>
+	<table class="horizontal_minimal center" summary="Shareholders Interface Buyer Scorecard">
+		<thread>
+			<tr>
+				<th scope="col">Appraisal Factors</th>
+				<th scope="col">Factor Weight</th>
+				<th scope="col">Factor Rating</th>
+				<th scope="col">Factor Grade</th>
+				<th scope="col">Factor Score</th>
+				<th scope="col">Weighted Factor Score</th>
+				<th scope="col">Comments</th>
+			</tr>
+		</thread>
+		<tbody>
+			<tr>
+				<td>Enterprise Valuation</td>
+				<td>20%</td>
+				<td>2</td>
+				<td>B</td>
+				<td>85</td>
+				<td>12.75</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Dividends</td>
+				<td>20%</td>
+				<td>3</td>
+				<td>A</td>
+				<td>95</td>
+				<td>4.75</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Price/Earnings Ratio</td>
+				<td>20%</td>
+				<td>2</td>
+				<td>B</td>
+				<td>85</td>
+				<td>4.25</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Earnings/Share Ratio</td>
+				<td>20%</td>
+				<td>3</td>
+				<td>A</td>
+				<td>95</td>
+				<td>4.75</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Revenue/Employee Ratio</td>
+				<td>20%</td>
+				<td>2</td>
+				<td>B</td>
+				<td>85</td>
+				<td>4.25</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr><td colspan="7"><strong>Total</strong></td></tr>
+		</tbody>
+	</table>
+</div>
 
-<h3>Financial Resources Buyer Scorecard</h3>
-<table class="horizontal_minimal" summary="Financial Resources Buyer Scorecard">
-	<thread>
-		<tr>
-			<th scope="col">Appraisal Factors</th>
-			<th scope="col">Factor Weight</th>
-			<th scope="col">Factor Rating</th>
-			<th scope="col">Factor Grade</th>
-			<th scope="col">Factor Score</th>
-			<th scope="col">Weighted Factor Score</th>
-		</tr>
-	</thread>
-	<tbody>
-		<tr>
-			<td>Retained Earnings</td>
-			<td>20%</td>
-			<td>2</td>
-			<td>B</td>
-			<td>85</td>
-			<td>12.75</td>
-		</tr>
-		<tr>
-			<td>Backlog</td>
-			<td>20%</td>
-			<td>3</td>
-			<td>A</td>
-			<td>95</td>
-			<td>4.75</td>
-		</tr>
-		<tr>
-			<td>Revenue</td>
-			<td>20%</td>
-			<td>2</td>
-			<td>B</td>
-			<td>85</td>
-			<td>4.25</td>
-		</tr>
-		<tr>
-			<td>EBITDA</td>
-			<td>20%</td>
-			<td>3</td>
-			<td>A</td>
-			<td>95</td>
-			<td>4.75</td>
-		</tr>
-		<tr>
-			<td>Liquidity</td>
-			<td>20%</td>
-			<td>2</td>
-			<td>B</td>
-			<td>85</td>
-			<td>4.25</td>
-		</tr>
-		<tr><td colspan="6"><strong>Total</strong></td></tr>
-	</tbody>
-</table>
+<div id="aibs" class="scorecard hide">
+	<h3>Authorities Interface Buyer Scorecard</h3>
+	<table class="horizontal_minimal center" summary="Authorities Interface Buyer Scorecard">
+		<thread>
+			<tr>
+				<th scope="col">Appraisal Factors</th>
+				<th scope="col">Factor Weight</th>
+				<th scope="col">Factor Rating</th>
+				<th scope="col">Factor Grade</th>
+				<th scope="col">Factor Score</th>
+				<th scope="col">Weighted Factor Score</th>
+				<th scope="col">Comments</th>
+			</tr>
+		</thread>
+		<tbody>
+			<tr>
+				<td>Audited Financial Statements</td>
+				<td>20%</td>
+				<td>2</td>
+				<td>B</td>
+				<td>85</td>
+				<td>12.75</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Sarbanes-Oxley Compliance</td>
+				<td>20%</td>
+				<td>3</td>
+				<td>A</td>
+				<td>95</td>
+				<td>4.75</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Payment Card Industry Data Security Standard Compliance</td>
+				<td>20%</td>
+				<td>2</td>
+				<td>B</td>
+				<td>85</td>
+				<td>4.25</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>International Trade Agreements</td>
+				<td>20%</td>
+				<td>3</td>
+				<td>A</td>
+				<td>95</td>
+				<td>4.75</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Local Licenses &amp; Permits</td>
+				<td>20%</td>
+				<td>2</td>
+				<td>B</td>
+				<td>85</td>
+				<td>4.25</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr><td colspan="7"><strong>Total</strong></td></tr>
+		</tbody>
+	</table>
+</div>
 
-<br>
+<div id="scibs" class="scorecard hide">
+	<h3>Supply Chain Interface Buyer Scorecard</h3>
+	<table class="horizontal_minimal center" summary="Supply Chain Interface Buyer Scorecard">
+		<thread>
+			<tr>
+				<th scope="col">Appraisal Factors</th>
+				<th scope="col">Factor Weight</th>
+				<th scope="col">Factor Rating</th>
+				<th scope="col">Factor Grade</th>
+				<th scope="col">Factor Score</th>
+				<th scope="col">Weighted Factor Score</th>
+				<th scope="col">Comments</th>
+			</tr>
+		</thread>
+		<tbody>
+			<tr>
+				<td>Hardware Manufacturing Secondary Sources</td>
+				<td>20%</td>
+				<td>2</td>
+				<td>B</td>
+				<td>85</td>
+				<td>12.75</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Software Development Secondary Sources</td>
+				<td>20%</td>
+				<td>3</td>
+				<td>A</td>
+				<td>95</td>
+				<td>4.75</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Consulting Services Secondary Sources</td>
+				<td>20%</td>
+				<td>2</td>
+				<td>B</td>
+				<td>85</td>
+				<td>4.25</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Data Aggregation Secondary Sources</td>
+				<td>20%</td>
+				<td>3</td>
+				<td>A</td>
+				<td>95</td>
+				<td>4.75</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Packaged Solution Secondary Sources</td>
+				<td>20%</td>
+				<td>2</td>
+				<td>B</td>
+				<td>85</td>
+				<td>4.25</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr><td colspan="7"><strong>Total</strong></td></tr>
+		</tbody>
+	</table>
+</div>
 
-<h3>Intellectual Property Resources Buyer Scorecard</h3>
-<table class="horizontal_minimal" summary="Intellectual Property Resources Buyer Scorecard">
-	<thread>
-		<tr>
-			<th scope="col">Appraisal Factors</th>
-			<th scope="col">Factor Weight</th>
-			<th scope="col">Factor Rating</th>
-			<th scope="col">Factor Grade</th>
-			<th scope="col">Factor Score</th>
-			<th scope="col">Weighted Factor Score</th>
-		</tr>
-	</thread>
-	<tbody>
-		<tr>
-			<td>Filed Patents</td>
-			<td>20%</td>
-			<td>2</td>
-			<td>B</td>
-			<td>85</td>
-			<td>12.75</td>
-		</tr>
-		<tr>
-			<td>Issued Patents</td>
-			<td>20%</td>
-			<td>3</td>
-			<td>A</td>
-			<td>95</td>
-			<td>4.75</td>
-		</tr>
-		<tr>
-			<td>Issued Copyrights</td>
-			<td>20%</td>
-			<td>2</td>
-			<td>B</td>
-			<td>85</td>
-			<td>4.25</td>
-		</tr>
-		<tr>
-			<td>Issued Trademarks</td>
-			<td>20%</td>
-			<td>3</td>
-			<td>A</td>
-			<td>95</td>
-			<td>4.75</td>
-		</tr>
-		<tr>
-			<td>Sector/Industry Awards</td>
-			<td>20%</td>
-			<td>2</td>
-			<td>B</td>
-			<td>85</td>
-			<td>4.25</td>
-		</tr>
-		<tr><td colspan="6"><strong>Total</strong></td></tr>
-	</tbody>
-</table>
+<div id="coibs" class="scorecard hide">
+	<h3>Competitors Interface Buyer Scorecard</h3>
+	<table class="horizontal_minimal center" summary="Competitors Interface Buyer Scorecard">
+		<thread>
+			<tr>
+				<th scope="col">Appraisal Factors</th>
+				<th scope="col">Factor Weight</th>
+				<th scope="col">Factor Rating</th>
+				<th scope="col">Factor Grade</th>
+				<th scope="col">Factor Score</th>
+				<th scope="col">Weighted Factor Score</th>
+				<th scope="col">Comments</th>
+			</tr>
+		</thread>
+		<tbody>
+			<tr>
+				<td>Market Share</td>
+				<td>20%</td>
+				<td>2</td>
+				<td>B</td>
+				<td>85</td>
+				<td>12.75</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Sector Influence</td>
+				<td>20%</td>
+				<td>3</td>
+				<td>A</td>
+				<td>95</td>
+				<td>4.75</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Industry Influence</td>
+				<td>20%</td>
+				<td>2</td>
+				<td>B</td>
+				<td>85</td>
+				<td>4.25</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Geography Influence</td>
+				<td>20%</td>
+				<td>3</td>
+				<td>A</td>
+				<td>95</td>
+				<td>4.75</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Publications</td>
+				<td>20%</td>
+				<td>2</td>
+				<td>B</td>
+				<td>85</td>
+				<td>4.25</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr><td colspan="7"><strong>Total</strong></td></tr>
+		</tbody>
+	</table>
+</div>
 
-<br>
+<div id="pibs" class="scorecard hide">
+	<h3>Prospects Interface Buyer Scorecard</h3>
+	<table class="horizontal_minimal center" summary="Prospects Interface Buyer Scorecard">
+		<thread>
+			<tr>
+				<th scope="col">Appraisal Factors</th>
+				<th scope="col">Factor Weight</th>
+				<th scope="col">Factor Rating</th>
+				<th scope="col">Factor Grade</th>
+				<th scope="col">Factor Score</th>
+				<th scope="col">Weighted Factor Score</th>
+				<th scope="col">Comments</th>
+			</tr>
+		</thread>
+		<tbody>
+			<tr>
+				<td>Sales Pipeline</td>
+				<td>20%</td>
+				<td>2</td>
+				<td>B</td>
+				<td>85</td>
+				<td>12.75</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Sales Forecast</td>
+				<td>20%</td>
+				<td>3</td>
+				<td>A</td>
+				<td>95</td>
+				<td>4.75</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Sales Budget</td>
+				<td>20%</td>
+				<td>2</td>
+				<td>B</td>
+				<td>85</td>
+				<td>4.25</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Close Rate</td>
+				<td>20%</td>
+				<td>3</td>
+				<td>A</td>
+				<td>95</td>
+				<td>4.75</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Recurring Sales</td>
+				<td>20%</td>
+				<td>2</td>
+				<td>B</td>
+				<td>85</td>
+				<td>4.25</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr><td colspan="7"><strong>Total</strong></td></tr>
+		</tbody>
+	</table>
+</div>
 
-<h3>Facility Resources Buyer Scorecard</h3>
-<table class="horizontal_minimal" summary="Facility Resources Buyer Scorecard">
-	<thread>
-		<tr>
-			<th scope="col">Appraisal Factors</th>
-			<th scope="col">Factor Weight</th>
-			<th scope="col">Factor Rating</th>
-			<th scope="col">Factor Grade</th>
-			<th scope="col">Factor Score</th>
-			<th scope="col">Weighted Factor Score</th>
-		</tr>
-	</thread>
-	<tbody>
-		<tr>
-			<td>English-Speaking Countries</td>
-			<td>20%</td>
-			<td>2</td>
-			<td>B</td>
-			<td>85</td>
-			<td>12.75</td>
-		</tr>
-		<tr>
-			<td>Virtual Office Policy</td>
-			<td>20%</td>
-			<td>3</td>
-			<td>A</td>
-			<td>95</td>
-			<td>4.75</td>
-		</tr>
-		<tr>
-			<td>Continental Presence</td>
-			<td>20%</td>
-			<td>2</td>
-			<td>B</td>
-			<td>85</td>
-			<td>4.25</td>
-		</tr>
-		<tr>
-			<td>US Regional Presence</td>
-			<td>20%</td>
-			<td>3</td>
-			<td>A</td>
-			<td>95</td>
-			<td>4.75</td>
-		</tr>
-		<tr>
-			<td>US State &amp; Local Community Presence</td>
-			<td>20%</td>
-			<td>2</td>
-			<td>B</td>
-			<td>85</td>
-			<td>4.25</td>
-		</tr>
-		<tr><td colspan="6"><strong>Total</strong></td></tr>
-	</tbody>
-</table>
+<div id="chibs" class="scorecard hide">
+	<h3>Channel Interface Buyer Scorecard</h3>
+	<table class="horizontal_minimal center" summary="Channel Interface Buyer Scorecard">
+		<thread>
+			<tr>
+				<th scope="col">Appraisal Factors</th>
+				<th scope="col">Factor Weight</th>
+				<th scope="col">Factor Rating</th>
+				<th scope="col">Factor Grade</th>
+				<th scope="col">Factor Score</th>
+				<th scope="col">Weighted Factor Score</th>
+				<th scope="col">Comments</th>
+			</tr>
+		</thread>
+		<tbody>
+			<tr>
+				<td>Authorized Resellers</td>
+				<td>20%</td>
+				<td>2</td>
+				<td>B</td>
+				<td>85</td>
+				<td>12.75</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Add-On Product Partners</td>
+				<td>20%</td>
+				<td>3</td>
+				<td>A</td>
+				<td>95</td>
+				<td>4.75</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Add-On Service Partners</td>
+				<td>20%</td>
+				<td>2</td>
+				<td>B</td>
+				<td>85</td>
+				<td>4.25</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Production/Packaging Partners</td>
+				<td>20%</td>
+				<td>3</td>
+				<td>A</td>
+				<td>95</td>
+				<td>4.75</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Distribution/Fulfillment Partners</td>
+				<td>20%</td>
+				<td>2</td>
+				<td>B</td>
+				<td>85</td>
+				<td>4.25</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr><td colspan="7"><strong>Total</strong></td></tr>
+		</tbody>
+	</table>
+</div>
 
-<br>
+<div id="cibs" class="scorecard hide">
+	<h3>Customers Interface Buyer Scorecard</h3>
+	<table class="horizontal_minimal center" summary="Customers Interface Buyer Scorecard">
+		<thread>
+			<tr>
+				<th scope="col">Appraisal Factors</th>
+				<th scope="col">Factor Weight</th>
+				<th scope="col">Factor Rating</th>
+				<th scope="col">Factor Grade</th>
+				<th scope="col">Factor Score</th>
+				<th scope="col">Weighted Factor Score</th>
+				<th scope="col">Comments</th>
+			</tr>
+		</thread>
+		<tbody>
+			<tr>
+				<td>Customer Satisfaction Survey Results</td>
+				<td>20%</td>
+				<td>2</td>
+				<td>B</td>
+				<td>85</td>
+				<td>12.75</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Customer Case Studies/Testimonials/References</td>
+				<td>20%</td>
+				<td>3</td>
+				<td>A</td>
+				<td>95</td>
+				<td>4.75</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Product Configurability</td>
+				<td>20%</td>
+				<td>2</td>
+				<td>B</td>
+				<td>85</td>
+				<td>4.25</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Product Auto-Scalability</td>
+				<td>20%</td>
+				<td>3</td>
+				<td>A</td>
+				<td>95</td>
+				<td>4.75</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr>
+				<td>Product Self-Service</td>
+				<td>20%</td>
+				<td>2</td>
+				<td>B</td>
+				<td>85</td>
+				<td>4.25</td>
+				<td><input type="text" value=""></input></p></td>
+			</tr>
+			<tr><td colspan="7"><strong>Total</strong></td></tr>
+		</tbody>
+	</table>
+</div>
 
-<h3>Board Interface Buyer Scorecard</h3>
-<table class="horizontal_minimal" summary="Board Interface Buyer Scorecard">
-	<thread>
-		<tr>
-			<th scope="col">Appraisal Factors</th>
-			<th scope="col">Factor Weight</th>
-			<th scope="col">Factor Rating</th>
-			<th scope="col">Factor Grade</th>
-			<th scope="col">Factor Score</th>
-			<th scope="col">Weighted Factor Score</th>
-		</tr>
-	</thread>
-	<tbody>
-		<tr>
-			<td>Business Excellence Framework</td>
-			<td>20%</td>
-			<td>2</td>
-			<td>B</td>
-			<td>85</td>
-			<td>12.75</td>
-		</tr>
-		<tr>
-			<td>Organizational Structure</td>
-			<td>20%</td>
-			<td>3</td>
-			<td>A</td>
-			<td>95</td>
-			<td>4.75</td>
-		</tr>
-		<tr>
-			<td>Organizational Roles &amp; Responsibilities</td>
-			<td>20%</td>
-			<td>2</td>
-			<td>B</td>
-			<td>85</td>
-			<td>4.25</td>
-		</tr>
-		<tr>
-			<td>Board/Committee Activism</td>
-			<td>20%</td>
-			<td>3</td>
-			<td>A</td>
-			<td>95</td>
-			<td>4.75</td>
-		</tr>
-		<tr>
-			<td>Board Member Relevance</td>
-			<td>20%</td>
-			<td>2</td>
-			<td>B</td>
-			<td>85</td>
-			<td>4.25</td>
-		</tr>
-		<tr><td colspan="6"><strong>Total</strong></td></tr>
-	</tbody>
-</table>
-
-<br>
-
-<h3>Shareholders Interface Buyer Scorecard</h3>
-<table class="horizontal_minimal" summary="Shareholders Interface Buyer Scorecard">
-	<thread>
-		<tr>
-			<th scope="col">Appraisal Factors</th>
-			<th scope="col">Factor Weight</th>
-			<th scope="col">Factor Rating</th>
-			<th scope="col">Factor Grade</th>
-			<th scope="col">Factor Score</th>
-			<th scope="col">Weighted Factor Score</th>
-		</tr>
-	</thread>
-	<tbody>
-		<tr>
-			<td>Enterprise Valuation</td>
-			<td>20%</td>
-			<td>2</td>
-			<td>B</td>
-			<td>85</td>
-			<td>12.75</td>
-		</tr>
-		<tr>
-			<td>Dividends</td>
-			<td>20%</td>
-			<td>3</td>
-			<td>A</td>
-			<td>95</td>
-			<td>4.75</td>
-		</tr>
-		<tr>
-			<td>Price/Earnings Ratio</td>
-			<td>20%</td>
-			<td>2</td>
-			<td>B</td>
-			<td>85</td>
-			<td>4.25</td>
-		</tr>
-		<tr>
-			<td>Earnings/Share Ratio</td>
-			<td>20%</td>
-			<td>3</td>
-			<td>A</td>
-			<td>95</td>
-			<td>4.75</td>
-		</tr>
-		<tr>
-			<td>Revenue/Employee Ratio</td>
-			<td>20%</td>
-			<td>2</td>
-			<td>B</td>
-			<td>85</td>
-			<td>4.25</td>
-		</tr>
-		<tr><td colspan="6"><strong>Total</strong></td></tr>
-	</tbody>
-</table>
-
-<br>
-
-<h3>Authorities Interface Buyer Scorecard</h3>
-<table class="horizontal_minimal" summary="Authorities Interface Buyer Scorecard">
-	<thread>
-		<tr>
-			<th scope="col">Appraisal Factors</th>
-			<th scope="col">Factor Weight</th>
-			<th scope="col">Factor Rating</th>
-			<th scope="col">Factor Grade</th>
-			<th scope="col">Factor Score</th>
-			<th scope="col">Weighted Factor Score</th>
-		</tr>
-	</thread>
-	<tbody>
-		<tr>
-			<td>Audited Financial Statements</td>
-			<td>20%</td>
-			<td>2</td>
-			<td>B</td>
-			<td>85</td>
-			<td>12.75</td>
-		</tr>
-		<tr>
-			<td>Sarbanes-Oxley Compliance</td>
-			<td>20%</td>
-			<td>3</td>
-			<td>A</td>
-			<td>95</td>
-			<td>4.75</td>
-		</tr>
-		<tr>
-			<td>Payment Card Industry Data Security Standard Compliance</td>
-			<td>20%</td>
-			<td>2</td>
-			<td>B</td>
-			<td>85</td>
-			<td>4.25</td>
-		</tr>
-		<tr>
-			<td>International Trade Agreements</td>
-			<td>20%</td>
-			<td>3</td>
-			<td>A</td>
-			<td>95</td>
-			<td>4.75</td>
-		</tr>
-		<tr>
-			<td>Local Licenses &amp; Permits</td>
-			<td>20%</td>
-			<td>2</td>
-			<td>B</td>
-			<td>85</td>
-			<td>4.25</td>
-		</tr>
-		<tr><td colspan="6"><strong>Total</strong></td></tr>
-	</tbody>
-</table>
-
-<br>
-
-<h3>Supply Chain Interface Buyer Scorecard</h3>
-<table class="horizontal_minimal" summary="Supply Chain Interface Buyer Scorecard">
-	<thread>
-		<tr>
-			<th scope="col">Appraisal Factors</th>
-			<th scope="col">Factor Weight</th>
-			<th scope="col">Factor Rating</th>
-			<th scope="col">Factor Grade</th>
-			<th scope="col">Factor Score</th>
-			<th scope="col">Weighted Factor Score</th>
-		</tr>
-	</thread>
-	<tbody>
-		<tr>
-			<td>Hardware Manufacturing Secondary Sources</td>
-			<td>20%</td>
-			<td>2</td>
-			<td>B</td>
-			<td>85</td>
-			<td>12.75</td>
-		</tr>
-		<tr>
-			<td>Software Development Secondary Sources</td>
-			<td>20%</td>
-			<td>3</td>
-			<td>A</td>
-			<td>95</td>
-			<td>4.75</td>
-		</tr>
-		<tr>
-			<td>Consulting Services Secondary Sources</td>
-			<td>20%</td>
-			<td>2</td>
-			<td>B</td>
-			<td>85</td>
-			<td>4.25</td>
-		</tr>
-		<tr>
-			<td>Data Aggregation Secondary Sources</td>
-			<td>20%</td>
-			<td>3</td>
-			<td>A</td>
-			<td>95</td>
-			<td>4.75</td>
-		</tr>
-		<tr>
-			<td>Packaged Solution Secondary Sources</td>
-			<td>20%</td>
-			<td>2</td>
-			<td>B</td>
-			<td>85</td>
-			<td>4.25</td>
-		</tr>
-		<tr><td colspan="6"><strong>Total</strong></td></tr>
-	</tbody>
-</table>
-
-<br>
-
-<h3>Competitors Interface Buyer Scorecard</h3>
-<table class="horizontal_minimal" summary="Competitors Interface Buyer Scorecard">
-	<thread>
-		<tr>
-			<th scope="col">Appraisal Factors</th>
-			<th scope="col">Factor Weight</th>
-			<th scope="col">Factor Rating</th>
-			<th scope="col">Factor Grade</th>
-			<th scope="col">Factor Score</th>
-			<th scope="col">Weighted Factor Score</th>
-		</tr>
-	</thread>
-	<tbody>
-		<tr>
-			<td>Market Share</td>
-			<td>20%</td>
-			<td>2</td>
-			<td>B</td>
-			<td>85</td>
-			<td>12.75</td>
-		</tr>
-		<tr>
-			<td>Sector Influence</td>
-			<td>20%</td>
-			<td>3</td>
-			<td>A</td>
-			<td>95</td>
-			<td>4.75</td>
-		</tr>
-		<tr>
-			<td>Industry Influence</td>
-			<td>20%</td>
-			<td>2</td>
-			<td>B</td>
-			<td>85</td>
-			<td>4.25</td>
-		</tr>
-		<tr>
-			<td>Geography Influence</td>
-			<td>20%</td>
-			<td>3</td>
-			<td>A</td>
-			<td>95</td>
-			<td>4.75</td>
-		</tr>
-		<tr>
-			<td>Publications</td>
-			<td>20%</td>
-			<td>2</td>
-			<td>B</td>
-			<td>85</td>
-			<td>4.25</td>
-		</tr>
-		<tr><td colspan="6"><strong>Total</strong></td></tr>
-	</tbody>
-</table>
-
-<br>
-
-<h3>Prospects Interface Buyer Scorecard</h3>
-<table class="horizontal_minimal" summary="Prospects Interface Buyer Scorecard">
-	<thread>
-		<tr>
-			<th scope="col">Appraisal Factors</th>
-			<th scope="col">Factor Weight</th>
-			<th scope="col">Factor Rating</th>
-			<th scope="col">Factor Grade</th>
-			<th scope="col">Factor Score</th>
-			<th scope="col">Weighted Factor Score</th>
-		</tr>
-	</thread>
-	<tbody>
-		<tr>
-			<td>Sales Pipeline</td>
-			<td>20%</td>
-			<td>2</td>
-			<td>B</td>
-			<td>85</td>
-			<td>12.75</td>
-		</tr>
-		<tr>
-			<td>Sales Forecast</td>
-			<td>20%</td>
-			<td>3</td>
-			<td>A</td>
-			<td>95</td>
-			<td>4.75</td>
-		</tr>
-		<tr>
-			<td>Sales Budget</td>
-			<td>20%</td>
-			<td>2</td>
-			<td>B</td>
-			<td>85</td>
-			<td>4.25</td>
-		</tr>
-		<tr>
-			<td>Close Rate</td>
-			<td>20%</td>
-			<td>3</td>
-			<td>A</td>
-			<td>95</td>
-			<td>4.75</td>
-		</tr>
-		<tr>
-			<td>Recurring Sales</td>
-			<td>20%</td>
-			<td>2</td>
-			<td>B</td>
-			<td>85</td>
-			<td>4.25</td>
-		</tr>
-		<tr><td colspan="6"><strong>Total</strong></td></tr>
-	</tbody>
-</table>
-
-<br>
-
-<h3>Channel Interface Buyer Scorecard</h3>
-<table class="horizontal_minimal" summary="Channel Interface Buyer Scorecard">
-	<thread>
-		<tr>
-			<th scope="col">Appraisal Factors</th>
-			<th scope="col">Factor Weight</th>
-			<th scope="col">Factor Rating</th>
-			<th scope="col">Factor Grade</th>
-			<th scope="col">Factor Score</th>
-			<th scope="col">Weighted Factor Score</th>
-		</tr>
-	</thread>
-	<tbody>
-		<tr>
-			<td>Authorized Resellers</td>
-			<td>20%</td>
-			<td>2</td>
-			<td>B</td>
-			<td>85</td>
-			<td>12.75</td>
-		</tr>
-		<tr>
-			<td>Add-On Product Partners</td>
-			<td>20%</td>
-			<td>3</td>
-			<td>A</td>
-			<td>95</td>
-			<td>4.75</td>
-		</tr>
-		<tr>
-			<td>Add-On Service Partners</td>
-			<td>20%</td>
-			<td>2</td>
-			<td>B</td>
-			<td>85</td>
-			<td>4.25</td>
-		</tr>
-		<tr>
-			<td>Production/Packaging Partners</td>
-			<td>20%</td>
-			<td>3</td>
-			<td>A</td>
-			<td>95</td>
-			<td>4.75</td>
-		</tr>
-		<tr>
-			<td>Distribution/Fulfillment Partners</td>
-			<td>20%</td>
-			<td>2</td>
-			<td>B</td>
-			<td>85</td>
-			<td>4.25</td>
-		</tr>
-		<tr><td colspan="6"><strong>Total</strong></td></tr>
-	</tbody>
-</table>
-
-<br>
-
-<h3>Customers Interface Buyer Scorecard</h3>
-<table class="horizontal_minimal" summary="Customers Interface Buyer Scorecard">
-	<thread>
-		<tr>
-			<th scope="col">Appraisal Factors</th>
-			<th scope="col">Factor Weight</th>
-			<th scope="col">Factor Rating</th>
-			<th scope="col">Factor Grade</th>
-			<th scope="col">Factor Score</th>
-			<th scope="col">Weighted Factor Score</th>
-		</tr>
-	</thread>
-	<tbody>
-		<tr>
-			<td>Customer Satisfaction Survey Results</td>
-			<td>20%</td>
-			<td>2</td>
-			<td>B</td>
-			<td>85</td>
-			<td>12.75</td>
-		</tr>
-		<tr>
-			<td>Customer Case Studies/Testimonials/References</td>
-			<td>20%</td>
-			<td>3</td>
-			<td>A</td>
-			<td>95</td>
-			<td>4.75</td>
-		</tr>
-		<tr>
-			<td>Product Configurability</td>
-			<td>20%</td>
-			<td>2</td>
-			<td>B</td>
-			<td>85</td>
-			<td>4.25</td>
-		</tr>
-		<tr>
-			<td>Product Auto-Scalability</td>
-			<td>20%</td>
-			<td>3</td>
-			<td>A</td>
-			<td>95</td>
-			<td>4.75</td>
-		</tr>
-		<tr>
-			<td>Product Self-Service</td>
-			<td>20%</td>
-			<td>2</td>
-			<td>B</td>
-			<td>85</td>
-			<td>4.25</td>
-		</tr>
-		<tr><td colspan="6"><strong>Total</strong></td></tr>
-	</tbody>
-</table>
-
-<br>
-
-<h3>Valuation Adjustment Range</h3>
-<table class="horizontal_minimal" summary="Valuation Adjustment Range">
-	<thread>
-		<tr>
-			<th scope="col">Buyer Appraisal Categories</th>
-			<th scope="col">Category Score</th>
-			<th scope="col">Category Grade</th>
-			<th scope="col">Category Weight</th>
-			<th scope="col">Baseline Valuation</th>
-			<th scope="col">Min Qual/Risk Adjust</th>
-			<th scope="col">Max Qual/Risk Adjust</th>
-			<th scope="col">Min Valuation</th>
-			<th scope="col">Max Valuation</th>
-		</tr>
-	</thread>
-	<tbody>
-		<tr>
-			<td>Human Resources (Staff)</td>
-			<td>85.25</td>
-			<td>B</td>
-			<td>10%</td>
-			<td>$100,000</td>
-			<td>5%</td>
-			<td>10%</td>
-			<td>$105,000</td>
-			<td>$110,000</td>
-		</tr>
-		<tr>
-			<td>Machine Resources (Tools)</td>
-			<td>88.50</td>
-			<td>B</td>
-			<td>5%</td>
-			<td>$50,000</td>
-			<td>5%</td>
-			<td>10%</td>
-			<td>$52,500</td>
-			<td>$55,000</td>
-		</tr>
-		<tr>
-			<td>Information Resources (Knowlege Base)</td>
-			<td>77.75</td>
-			<td>C</td>
-			<td>5%</td>
-			<td>$50,000</td>
-			<td>-%10</td>
-			<td>-%5</td>
-			<td>$45,000</td>
-			<td>$47,500</td>
-		</tr>
-		<tr>
-			<td>Financial Resources (Capital)</td>
-			<td>93.00</td>
-			<td>A</td>
-			<td>10%</td>
-			<td>$100,000</td>
-			<td>10%</td>
-			<td>20%</td>
-			<td>$110,000</td>
-			<td>$120,000</td>
-		</tr>
-		<tr>
-			<td>Intellectual Property Resources (Proprietary Inventions)</td>
-			<td>88.25</td>
-			<td>B</td>
-			<td>10%</td>
-			<td>$100,000</td>
-			<td>5%</td>
-			<td>10%</td>
-			<td>$105,000</td>
-			<td>$110,000</td>
-		</tr>
-		<tr>
-			<td>Facility Resources (Sites)</td>
-			<td>90.00</td>
-			<td>A</td>
-			<td>5%</td>
-			<td>50,000</td>
-			<td>10%</td>
-			<td>20%</td>
-			<td>$55,000</td>
-			<td>$60,000</td>
-		</tr>
-		<tr><td colspan="9"><strong>Subtotals</strong></td></tr>
-		<tr>
-			<td>Board of Directors &amp; Advisors Interface (Governance)</td>
-			<td>59.25</td>
-			<td>D</td>
-			<td>5%</td>
-			<td>$50,000</td>
-			<td>-20%</td>
-			<td>-10%</td>
-			<td>$40,000</td>
-			<td>$45,000</td>
-		</tr>
-		<tr>
-			<td>Shareholders Interface (ROI)</td>
-			<td>85.00</td>
-			<td>B</td>
-			<td>5%</td>
-			<td>$50.000</td>
-			<td>5%</td>
-			<td>10%</td>
-			<td>$52,500</td>
-			<td>$55,000</td>
-		</tr>
-		<tr>
-			<td>Legal &amp; Regulatory Authorities Interface (Compliance)</td>
-			<td>89.00</td>
-			<td>B</td>
-			<td>5%</td>
-			<td>$50,000</td>
-			<td>5%</td>
-			<td>10%</td>
-			<td>$52,500</td>
-			<td>$55,000</td>
-		</tr>
-		<tr>
-			<td>Supply Chain Interface (Raw Materials)</td>
-			<td>92.00</td>
-			<td>A</td>
-			<td>5%</td>
-			<td>$50,000</td>
-			<td>10%</td>
-			<td>20%</td>
-			<td>$55,000</td>
-			<td>$60,000</td>
-		</tr>
-		<tr>
-			<td>Competitors Interface (Threats)</td>
-			<td>85.00</td>
-			<td>B</td>
-			<td>10%</td>
-			<td>$100,000</td>
-			<td>5%</td>
-			<td>10%</td>
-			<td>$105,000</td>
-			<td>$110,000</td>
-		</tr>
-		<tr>
-			<td>Prospects Interface (Opportunities)</td>
-			<td>87.50</td>
-			<td>B</td>
-			<td>5%</td>
-			<td>$50,000</td>
-			<td>5%</td>
-			<td>10%</td>
-			<td>$52,500</td>
-			<td>$55,000</td>
-		</tr>
-		<tr>
-			<td>Channel Interface (Third-Party Add-Ons)</td>
-			<td>93.00</td>
-			<td>A</td>
-			<td>5%</td>
-			<td>$50,000</td>
-			<td>10%</td>
-			<td>20%</td>
-			<td>$55,000</td>
-			<td>$60,000</td>
-		</tr>
-		<tr>
-			<td>Customers Interface (Solutions)</td>
-			<td>91.00</td>
-			<td>A</td>
-			<td>15%</td>
-			<td>$150,000</td>
-			<td>10%</td>
-			<td>20%</td>
-			<td>$165,000</td>
-			<td>$180,000</td>
-		</tr>
-		<tr><td colspan="9"><strong>Subtotals</strong></td></tr>
-		<tr><td colspan="9"><strong>Total</strong></td></tr>
-	</tbody>
-</table>
+<div id="ewbs" class="scorecard hide">
+	<h3>Enterprise Wide Buyer Scorecard</h3>
+	<table class="horizontal_minimal center" summary="Enterprise Wide Buyer Scorecard">
+		<thread>
+			<tr>
+				<th scope="col">Appraisal Categories</th>
+				<th scope="col">Category Score</th>
+				<th scope="col">Category Grade</th>
+				<th scope="col">Category Weight</th>
+				<th scope="col">Weighted Category Score</th>
+			</tr>
+		</thread>
+		<tbody>
+			<tr>
+				<td>Human Resources</td>
+				<td>85.25</td>
+				<td>B</td>
+				<td>10%</td>
+				<td>8.53</td>
+			</tr>
+			<tr>
+				<td>Machine Resources</td>
+				<td>88.50</td>
+				<td>B</td>
+				<td>5%</td>
+				<td>4.43</td>
+			</tr>
+			<tr>
+				<td>Information Resources</td>
+				<td>77.75</td>
+				<td>C</td>
+				<td>5%</td>
+				<td>3.89</td>
+			</tr>
+			<tr>
+				<td>Financial Resources</td>
+				<td>93.00</td>
+				<td>A</td>
+				<td>10%</td>
+				<td>9.30</td>
+			</tr>
+			<tr>
+				<td>Intellectual Property Resources</td>
+				<td>88.25</td>
+				<td>B</td>
+				<td>10%</td>
+				<td>8.83</td>
+			</tr>
+			<tr>
+				<td>Facility Resources</td>
+				<td>90.00</td>
+				<td>A</td>
+				<td>5%</td>
+				<td>4.50</td>
+			</tr>
+			<tr><td colspan="5"><strong>Subtotals</strong></td></tr>
+			<tr>
+				<td>Board of Directors &amp; Advisors Interface</td>
+				<td>59.25</td>
+				<td>D</td>
+				<td>5%</td>
+				<td>2.96</td>
+			</tr>
+			<tr>
+				<td>Shareholders Interface</td>
+				<td>85.00</td>
+				<td>B</td>
+				<td>5%</td>
+				<td>4.25</td>
+			</tr>
+			<tr>
+				<td>Legal &amp; Regulatory Authorities Interface</td>
+				<td>89.00</td>
+				<td>B</td>
+				<td>5%</td>
+				<td>4.45</td>
+			</tr>
+			<tr>
+				<td>Supply Chain Interface</td>
+				<td>92.00</td>
+				<td>A</td>
+				<td>5%</td>
+				<td>4.60</td>
+			</tr>
+			<tr>
+				<td>Competitors Interface</td>
+				<td>85.00</td>
+				<td>B</td>
+				<td>5%</td>
+				<td>8.50</td>
+			</tr>
+			<tr>
+				<td>Prospects Interface</td>
+				<td>87.50</td>
+				<td>B</td>
+				<td>10%</td>
+				<td>4.38</td>
+			</tr>
+			<tr>
+				<td>Channel Interface</td>
+				<td>93.00</td>
+				<td>A</td>
+				<td>5%</td>
+				<td>4.65</td>
+			</tr>
+			<tr>
+				<td>Customers Interface</td>
+				<td>91.00</td>
+				<td>A</td>
+				<td>15%</td>
+				<td>13.65</td>
+			</tr>
+			<tr><td colspan="5"><strong>Subtotals</strong></td></tr>
+			<tr><td colspan="5"><strong>Total</strong></td></tr>
+		</tbody>
+	</table>
+</div>
 
 <br>

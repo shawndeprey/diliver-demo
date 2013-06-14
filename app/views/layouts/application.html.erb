@@ -8,8 +8,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<div class="background">
+	</div>
 	<div class="header">
 		<%= image_tag("/images/logo-without-dimensions.png") %>
+		<div class="app_title">
+			<h1><em>MAST</em> Buy-Side Due Diligence Application (BDDA)&trade;</h1>
+		</div>
 		<div class="user_info">
 			<div class="user_name">
 				<p>Deal Team Member: Joe Smith | <a href=#>Logout</a></p>
@@ -23,6 +28,7 @@
 		<div class="toolbar_contents">
 			<a href="#" class="button arrow_down left"><span class="button_icon"></span></a>
 			<a href="#" class="button gear left"><span class="button_icon"></span></a>
+			<% @page_state[:timeline].each{|button|%> <% if button[:is_current] && button[:title] == "Deal Team Identification" %><a href="#" class="button left"><span class="button_content">New Transaction</span></a><%end%> <% } if @page_state && @page_state[:timeline] %>
 		</div>
 	</div>
 	<div class="nav_container">
@@ -44,10 +50,13 @@
 		</div>
 		<div class="footer_toolbar">
 			<div class="footer_toolbar_contents">
-				<p>Current Stage</p>
+				<% @page_state[:timeline].each{|button|%> <% if button[:is_current]%><p>Current Step: <%= button[:title] %></p><%end%> <% } if @page_state && @page_state[:timeline] %>
+
 				<% if @page_state && @page_state[:next_button]%>
 					<a href="<%= @page_state[:next_button][0][:url]%>" class="button arrow_right right"><span class="button_content"><%= @page_state[:next_button][0][:title]%></span><span class="button_icon"></span></a>
 				<% end %>
+
+				<% @page_state[:timeline].each{|button|%> <% if button[:is_current] && button[:title] == "Qualification" %><a href="#" class="button arrow_right right"><span class="button_content">Upload</span></a><%end%> <% } if @page_state && @page_state[:timeline] %>
 			</div>
 		</div>
 	</div>
