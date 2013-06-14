@@ -8,6 +8,7 @@ Diliver::Application.routes.draw do
     get '/preliminary-due-diligence' => 'default#preliminary_due_diligence'
     get '/initial-valuation' => 'default#initial_valuation'
     get '/confirmatory-due-diligence' => 'default#confirmatory_due_diligence'
+    get '/valuation-preparation' => 'default#valuation_preparation'
     get '/final-valuation' => 'default#final_valuation'
   end
 end
