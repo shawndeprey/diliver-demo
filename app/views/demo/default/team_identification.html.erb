@@ -1,17 +1,18 @@
-<label>Existing Transactions (in MAST)</label>
-<div class="wrapper_dropdown">
+<h3>Existing Transactions (in <em>MAST</em>&trade;)</h3>
+<div id="team_select" class="wrapper_dropdown">
 	<select onchange="diliver.toggleTransaction(this)">
 	  <option selected=true value="transaction_new">-Select a Transaction-</option>
-	  <option value="transaction_01">Transaction 01</option>
-	  <option value="transaction_02">Transaction 02</option>
+	  <option value="transaction_01">Transaction 1 Deal Team Members: Buyer = Buyer ABC &amp; Seller = Seller XYZ  </option>
+	  <option value="transaction_02">Transaction 2 Deal Team Members: Buyer = Buyer DEF &amp; Seller = Seller UVW</option>
 	</select>
 </div>
 
 <div id="transaction_new" class="transaction">
-	<table class="horizontal_minimal center" summary="ABC Deal Team Members">
+	<h2>Buyer</h2>
+	<table class="horizontal_minimal center" summary="Buyer ABC Deal Team Members">
 		<thread>
 			<tr>
-				<th scope="col">ABC Deal Team Member</th>
+				<th scope="col">Buyer ABC Individuals</th>
 				<th scope="col">Position</th>
 				<th scope="col">Role</th>
 			</tr>
@@ -54,10 +55,11 @@
 	<hr>
 	<br>
 
-	<table class="horizontal_minimal center" summary="XYZ Deal Team Members">
+	<h2>Seller</h2>
+	<table class="horizontal_minimal center" summary="Seller XYZ Deal Team Members">
 		<thread>
 			<tr>
-				<th scope="col">XYZ Deal Team Member</th>
+				<th scope="col">Seller XYZ Deal Team Member</th>
 				<th scope="col">Position</th>
 				<th scope="col">Role</th>
 			</tr>
@@ -98,6 +100,7 @@
 </div>
 
 <div id="transaction_01" class="transaction hide">
+	<h2>Buyer ABC</h2>
 	<table class="horizontal_minimal center" summary="Buyer ABC Individuals">
 		<thread>
 			<tr>
@@ -109,32 +112,32 @@
 		<tbody>
 			<tr>
 				<td><input type="text" value="Individual 1"></input></p></td>
-				<td><input type="text" value="ABC Dir Corp Dev"></input></p></td>
+				<td><input type="text" value="Buyer ABC Director of Corporate Development"></input></p></td>
 				<td><input type="text" value="Deal Lead"></input></p></td>
 			</tr>
 			<tr>
 				<td><input type="text" value="Individual 2"></input></p></td>
-				<td><input type="text" value="ABC CEO"></input></p></td>
+				<td><input type="text" value="Buyer ABC CEO"></input></p></td>
 				<td><input type="text" value="Final Approval"></input></p></td>
 			</tr>
 			<tr>
 				<td><input type="text" value="Individual 3"></input></p></td>
-				<td><input type="text" value="ABC CFO"></input></p></td>
+				<td><input type="text" value="Buyer ABC CFO"></input></p></td>
 				<td><input type="text" value="Financials"></input></p></td>
 			</tr>
 			<tr>
 				<td><input type="text" value="Individual 4"></input></p></td>
-				<td><input type="text" value="ABC General Counsel"></input></p></td>
+				<td><input type="text" value="Buyer ABC General Counsel"></input></p></td>
 				<td><input type="text" value="Agreements"></input></p></td>
 			</tr>
 			<tr>
 				<td><input type="text" value="Individual 5"></input></p></td>
-				<td><input type="text" value="ABC Outside Attorney"></input></p></td>
+				<td><input type="text" value="Buyer ABC Outside Attorney"></input></p></td>
 				<td><input type="text" value="Legal Advice"></input></p></td>
 			</tr>
 			<tr>
 				<td><input type="text" value="Individual 6"></input></p></td>
-				<td><input type="text" value="ABC M&amp;A Advisor"></input></p></td>
+				<td><input type="text" value="Buyer ABC M&amp;A Advisor"></input></p></td>
 				<td><input type="text" value="Market Advice"></input></p></td>
 			</tr>
 		</tbody>
@@ -144,6 +147,7 @@
 	<hr>
 	<br>
 
+	<h2>Seller XYZ</h2>
 	<table class="horizontal_minimal center" summary="Seller XYZ Individuals">
 		<thread>
 			<tr>
@@ -155,32 +159,32 @@
 		<tbody>
 			<tr>
 				<td><input type="text" value="Individual 7"></input></p></td>
-				<td><input type="text" value="XYZ Dir Corp Dev"></input></p></td>
+				<td><input type="text" value="Seller XYZ Director of Corporate Development"></input></p></td>
 				<td><input type="text" value="Deal Lead"></input></p></td>
 			</tr>
 			<tr>
 				<td><input type="text" value="Individual 8"></input></p></td>
-				<td><input type="text" value="XYZ CEO"></input></p></td>
+				<td><input type="text" value="Seller XYZ CEO"></input></p></td>
 				<td><input type="text" value="Final Approval"></input></p></td>
 			</tr>
 			<tr>
 				<td><input type="text" value="Individual 9"></input></p></td>
-				<td><input type="text" value="XYZ CFO"></input></p></td>
+				<td><input type="text" value="Seller XYZ CFO"></input></p></td>
 				<td><input type="text" value="Financials"></input></p></td>
 			</tr>
 			<tr>
 				<td><input type="text" value="Individual 10"></input></p></td>
-				<td><input type="text" value="XYZ General Counsel"></input></p></td>
+				<td><input type="text" value="Seller XYZ General Counsel"></input></p></td>
 				<td><input type="text" value="Agreements"></input></p></td>
 			</tr>
 			<tr>
 				<td><input type="text" value="Individual 11"></input></p></td>
-				<td><input type="text" value="XYZ Outside Attorney"></input></p></td>
+				<td><input type="text" value="Seller XYZ Outside Attorney"></input></p></td>
 				<td><input type="text" value="Legal Advice"></input></p></td>
 			</tr>
 			<tr>
 				<td><input type="text" value="Individual 12"></input></p></td>
-				<td><input type="text" value="XYZ M&amp;A Advisor"></input></p></td>
+				<td><input type="text" value="Seller XYZ M&amp;A Advisor"></input></p></td>
 				<td><input type="text" value="Market Advice"></input></p></td>
 			</tr>
 		</tbody>
@@ -188,10 +192,11 @@
 </div>
 
 <div id="transaction_02" class="transaction hide">
-	<table class="horizontal_minimal center" summary="Buyer ABC Individuals">
+	<h2>Buyer DEF</h2>
+	<table class="horizontal_minimal center" summary="Buyer DEF Individuals">
 		<thread>
 			<tr>
-				<th scope="col">Buyer ABC Individuals</th>
+				<th scope="col">Buyer DEF Individuals</th>
 				<th scope="col">Position</th>
 				<th scope="col">Role</th>
 			</tr>
@@ -199,32 +204,32 @@
 		<tbody>
 			<tr>
 				<td><input type="text" value="Individual 1"></input></p></td>
-				<td><input type="text" value="ABC Dir Corp Dev"></input></p></td>
+				<td><input type="text" value="Buyer DEF Director of Corporate Development"></input></p></td>
 				<td><input type="text" value="Deal Lead"></input></p></td>
 			</tr>
 			<tr>
 				<td><input type="text" value="Individual 2"></input></p></td>
-				<td><input type="text" value="ABC CEO"></input></p></td>
+				<td><input type="text" value="Buyer DEF CEO"></input></p></td>
 				<td><input type="text" value="Final Approval"></input></p></td>
 			</tr>
 			<tr>
 				<td><input type="text" value="Individual 3"></input></p></td>
-				<td><input type="text" value="ABC CFO"></input></p></td>
+				<td><input type="text" value="Buyer DEF CFO"></input></p></td>
 				<td><input type="text" value="Financials"></input></p></td>
 			</tr>
 			<tr>
 				<td><input type="text" value="Individual 4"></input></p></td>
-				<td><input type="text" value="ABC General Counsel"></input></p></td>
+				<td><input type="text" value="Buyer DEF General Counsel"></input></p></td>
 				<td><input type="text" value="Agreements"></input></p></td>
 			</tr>
 			<tr>
 				<td><input type="text" value="Individual 5"></input></p></td>
-				<td><input type="text" value="ABC Outside Attorney"></input></p></td>
+				<td><input type="text" value="Buyer DEF Outside Attorney"></input></p></td>
 				<td><input type="text" value="Legal Advice"></input></p></td>
 			</tr>
 			<tr>
 				<td><input type="text" value="Individual 6"></input></p></td>
-				<td><input type="text" value="ABC M&amp;A Advisor"></input></p></td>
+				<td><input type="text" value="Buyer DEF M&amp;A Advisor"></input></p></td>
 				<td><input type="text" value="Market Advice"></input></p></td>
 			</tr>
 		</tbody>
@@ -234,10 +239,11 @@
 	<hr>
 	<br>
 
-	<table class="horizontal_minimal center" summary="Seller XYZ Individuals">
+	<h2>Seller UVW</h2>
+	<table class="horizontal_minimal center" summary="Seller UVW Individuals">
 		<thread>
 			<tr>
-				<th scope="col">Seller XYZ Individuals</th>
+				<th scope="col">Seller UVW Individuals</th>
 				<th scope="col">Position</th>
 				<th scope="col">Role</th>
 			</tr>
@@ -245,32 +251,32 @@
 		<tbody>
 			<tr>
 				<td><input type="text" value="Individual 7"></input></p></td>
-				<td><input type="text" value="XYZ Dir Corp Dev"></input></p></td>
+				<td><input type="text" value="Seller UVW Director of Corporate Development"></input></p></td>
 				<td><input type="text" value="Deal Lead"></input></p></td>
 			</tr>
 			<tr>
 				<td><input type="text" value="Individual 8"></input></p></td>
-				<td><input type="text" value="XYZ CEO"></input></p></td>
+				<td><input type="text" value="Seller UVW CEO"></input></p></td>
 				<td><input type="text" value="Final Approval"></input></p></td>
 			</tr>
 			<tr>
 				<td><input type="text" value="Individual 9"></input></p></td>
-				<td><input type="text" value="XYZ CFO"></input></p></td>
+				<td><input type="text" value="Seller UVW CFO"></input></p></td>
 				<td><input type="text" value="Financials"></input></p></td>
 			</tr>
 			<tr>
 				<td><input type="text" value="Individual 10"></input></p></td>
-				<td><input type="text" value="XYZ General Counsel"></input></p></td>
+				<td><input type="text" value="Seller UVW General Counsel"></input></p></td>
 				<td><input type="text" value="Agreements"></input></p></td>
 			</tr>
 			<tr>
 				<td><input type="text" value="Individual 11"></input></p></td>
-				<td><input type="text" value="XYZ Outside Attorney"></input></p></td>
+				<td><input type="text" value="Seller UVW Outside Attorney"></input></p></td>
 				<td><input type="text" value="Legal Advice"></input></p></td>
 			</tr>
 			<tr>
 				<td><input type="text" value="Individual 12"></input></p></td>
-				<td><input type="text" value="XYZ M&amp;A Advisor"></input></p></td>
+				<td><input type="text" value="Seller UVW M&amp;A Advisor"></input></p></td>
 				<td><input type="text" value="Market Advice"></input></p></td>
 			</tr>
 		</tbody>
