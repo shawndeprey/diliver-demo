@@ -3,56 +3,29 @@
 	<table class="horizontal_minimal center" summary="Valuation Adjustment Range">
 		<thread>
 			<tr>
-				<th scope="col">Buyer Appraisal Categories</th>
+				<th scope="col">Buyer Appraisal Categories (to Measure Seller XYZ)</th>
 				<th scope="col">Category Score</th>
 				<th scope="col">Category Grade</th>
 				<th scope="col">Category Weight</th>
+				<th scope="col">Weighted Category Score</th>
 				<th scope="col">Baseline Valuation</th>
-				<th scope="col">Min Qual/Risk Adjust</th>
-				<th scope="col">Max Qual/Risk Adjust</th>
-				<th scope="col">Min Valuation</th>
-				<th scope="col">Max Valuation</th>
+				<th scope="col">MIN Qual/Risk Adjust.</th>
+				<th scope="col">MAX Qual/Risk Adjust.</th>
+				<th scope="col">MIN Valuation</th>
+				<th scope="col">MAX Valuation</th>
 			</tr>
 		</thread>
 		<tbody>
 			<tr>
-				<td>Human Resources (Staff)</td>
-				<td>85.25</td>
-				<td>B</td>
-				<td>10%</td>
-				<td>$100,000</td>
-				<td>5%</td>
-				<td>10%</td>
-				<td>$105,000</td>
-				<td>$110,000</td>
+				<td class="no_border"><strong><em>Internal Resources:</em></strong></td>
+				<td class="no_border" colspan="9"></td>
 			</tr>
 			<tr>
-				<td>Machine Resources (Tools)</td>
-				<td>88.50</td>
-				<td>B</td>
-				<td>5%</td>
-				<td>$50,000</td>
-				<td>5%</td>
-				<td>10%</td>
-				<td>$52,500</td>
-				<td>$55,000</td>
-			</tr>
-			<tr>
-				<td>Information Resources (Knowlege Base)</td>
-				<td>77.75</td>
-				<td>C</td>
-				<td>5%</td>
-				<td>$50,000</td>
-				<td>-%10</td>
-				<td>-%5</td>
-				<td>$45,000</td>
-				<td>$47,500</td>
-			</tr>
-			<tr>
-				<td>Financial Resources (Capital)</td>
-				<td>93.00</td>
+				<td>1) Human Resources</td>
+				<td>91.00</td>
 				<td>A</td>
 				<td>10%</td>
+				<td>9.10</td>
 				<td>$100,000</td>
 				<td>10%</td>
 				<td>20%</td>
@@ -60,10 +33,35 @@
 				<td>$120,000</td>
 			</tr>
 			<tr>
-				<td>Intellectual Property Resources (Proprietary Inventions)</td>
-				<td>88.25</td>
+				<td>2) Machine Resources</td>
+				<td>86.50</td>
+				<td>B</td>
+				<td>5%</td>
+				<td>4.33</td>
+				<td>$50,000</td>
+				<td>5%</td>
+				<td>10%</td>
+				<td>$52,500</td>
+				<td>$55,000</td>
+			</tr>
+			<tr>
+				<td>3) Information Resources</td>
+				<td>72.00</td>
+				<td>C</td>
+				<td>5%</td>
+				<td>3.60</td>
+				<td>$50,000</td>
+				<td>-%10</td>
+				<td>-%5</td>
+				<td>$45,000</td>
+				<td>$47,500</td>
+			</tr>
+			<tr>
+				<td>4) Financial Resources</td>
+				<td>88.50</td>
 				<td>B</td>
 				<td>10%</td>
+				<td>8.85</td>
 				<td>$100,000</td>
 				<td>5%</td>
 				<td>10%</td>
@@ -71,44 +69,73 @@
 				<td>$110,000</td>
 			</tr>
 			<tr>
-				<td>Facility Resources (Sites)</td>
+				<td>5) Intellectual Property Resources</td>
+				<td>79.00</td>
+				<td>C</td>
+				<td>10%</td>
+				<td>7.90</td>
+				<td>$100,000</td>
+				<td>-10%</td>
+				<td>-5%</td>
+				<td>$90,000</td>
+				<td>$95,000</td>
+			</tr>
+			<tr>
+				<td>6) Facility Resources</td>
 				<td>90.00</td>
 				<td>A</td>
 				<td>5%</td>
-				<td>50,000</td>
+				<td>4.50</td>
+				<td>$50,000</td>
 				<td>10%</td>
 				<td>20%</td>
 				<td>$55,000</td>
 				<td>$60,000</td>
 			</tr>
-			<tr><td colspan="9"><strong>Subtotals</strong></td></tr>
 			<tr>
-				<td>Board of Directors &amp; Advisors Interface (Governance)</td>
-				<td>59.25</td>
-				<td>D</td>
-				<td>5%</td>
-				<td>$50,000</td>
-				<td>-20%</td>
-				<td>-10%</td>
-				<td>$40,000</td>
-				<td>$45,000</td>
+				<td><strong>Subtotal</strong></td>
+				<td colspan="2"></td>
+				<td><strong>45%</strong></td>
+				<td><strong>38.28</strong></td>
+				<td><strong>$450,000</strong></td>
+				<td colspan="2"></td>
+				<td><strong>$457,500</strong></td>
+				<td><strong>$487,500</strong></td>
 			</tr>
 			<tr>
-				<td>Shareholders Interface (ROI)</td>
-				<td>85.00</td>
+				<td class="no_border"><strong><em>Internal Resources:</em></strong></td>
+				<td class="no_border" colspan="9"></td>
+			</tr>
+			<tr>
+				<td>7) Board Interface</td>
+				<td>82.50</td>
 				<td>B</td>
 				<td>5%</td>
+				<td>4.13</td>
+				<td>$50,000</td>
+				<td>5%</td>
+				<td>10%</td>
+				<td>$52,500</td>
+				<td>$55,000</td>
+			</tr>
+			<tr>
+				<td>8) Shareholders Interface</td>
+				<td>76.50</td>
+				<td>C</td>
+				<td>5%</td>
+				<td>3.83</td>
 				<td>$50.000</td>
-				<td>5%</td>
-				<td>10%</td>
-				<td>$52,500</td>
-				<td>$55,000</td>
+				<td>-10%</td>
+				<td>-20%</td>
+				<td>$45,000</td>
+				<td>$47,500</td>
 			</tr>
 			<tr>
-				<td>Legal &amp; Regulatory Authorities Interface (Compliance)</td>
-				<td>89.00</td>
+				<td>9) Authorities Interface</td>
+				<td>97.50</td>
 				<td>B</td>
 				<td>5%</td>
+				<td>4.38</td>
 				<td>$50,000</td>
 				<td>5%</td>
 				<td>10%</td>
@@ -116,32 +143,35 @@
 				<td>$55,000</td>
 			</tr>
 			<tr>
-				<td>Supply Chain Interface (Raw Materials)</td>
-				<td>92.00</td>
+				<td>10) Supply Chain Interface</td>
+				<td>86.50</td>
+				<td>B</td>
+				<td>5%</td>
+				<td>4.33</td>
+				<td>$50,000</td>
+				<td>5%</td>
+				<td>10%</td>
+				<td>$52,500</td>
+				<td>$55,000</td>
+			</tr>
+			<tr>
+				<td>11) Competitors Interface</td>
+				<td>92.50</td>
 				<td>A</td>
-				<td>5%</td>
-				<td>$50,000</td>
 				<td>10%</td>
-				<td>20%</td>
-				<td>$55,000</td>
-				<td>$60,000</td>
-			</tr>
-			<tr>
-				<td>Competitors Interface (Threats)</td>
-				<td>85.00</td>
-				<td>B</td>
-				<td>10%</td>
+				<td>9.25</td>
 				<td>$100,000</td>
-				<td>5%</td>
 				<td>10%</td>
-				<td>$105,000</td>
+				<td>20%</td>
 				<td>$110,000</td>
+				<td>$120,000</td>
 			</tr>
 			<tr>
-				<td>Prospects Interface (Opportunities)</td>
-				<td>87.50</td>
+				<td>12) Prospects Interface</td>
+				<td>83.00</td>
 				<td>B</td>
 				<td>5%</td>
+				<td>4.15</td>
 				<td>$50,000</td>
 				<td>5%</td>
 				<td>10%</td>
@@ -149,10 +179,11 @@
 				<td>$55,000</td>
 			</tr>
 			<tr>
-				<td>Channel Interface (Third-Party Add-Ons)</td>
-				<td>93.00</td>
+				<td>13) Channel Interface</td>
+				<td>90.50</td>
 				<td>A</td>
 				<td>5%</td>
+				<td>4.53</td>
 				<td>$50,000</td>
 				<td>10%</td>
 				<td>20%</td>
@@ -160,18 +191,35 @@
 				<td>$60,000</td>
 			</tr>
 			<tr>
-				<td>Customers Interface (Solutions)</td>
-				<td>91.00</td>
+				<td>14) Customers Interface</td>
+				<td>92.50</td>
 				<td>A</td>
 				<td>15%</td>
+				<td>13.88</td>
 				<td>$150,000</td>
 				<td>10%</td>
 				<td>20%</td>
 				<td>$165,000</td>
 				<td>$180,000</td>
 			</tr>
-			<tr><td colspan="9"><strong>Subtotals</strong></td></tr>
-			<tr><td colspan="9"><strong>Total</strong></td></tr>
+			<tr>
+				<td><strong>Subtotal</strong></td>
+				<td colspan="2"></td>
+				<td><strong>55%</strong></td>
+				<td><strong>48.45</strong></td>
+				<td><strong>$550,000</strong></td>
+				<td colspan="2"></td>
+				<td><strong>$585,000</strong></td>
+				<td><strong>$627,500</strong></td>
+			</tr>
+			<tr>
+				<td><strong>Total</strong></td>
+				<td colspan="4"></td>
+				<td><strong>$1,000,000</strong></td>
+				<td colspan="2"></td>
+				<td><strong>$1,042,500</strong></td>
+				<td><strong>$1,115,500</strong></td>
+			</tr>
 		</tbody>
 	</table>
 </div>
