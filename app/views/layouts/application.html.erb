@@ -20,7 +20,7 @@
 				<p>Individual 1 | <a href=#>Logout</a></p>
 			</div>
 			<div class="user_title">
-				<p>Buyer ABC Director of Corporate Development</p>
+				<p><em>Buyer ABC</em> Director of Corporate Development</p>
 			</div>
 		</div>
 	</div>
@@ -35,7 +35,7 @@
 		</ul>
 	</div>
 	<% if@page_state %><hr><%end%>
-	
+
 	<!-- Specific page content goes here -->
 	<div class="content">
 		<%= yield %>
@@ -57,7 +57,7 @@
 					<a href="<%= @page_state[:next_button][0][:url]%>" class="button text right"><span class="button_content"><%= @page_state[:next_button][0][:title]%></span><img src="/images/arrow-right.png" class="text_arrow_right"/></a>
 				<% end %>
 
-				<% @page_state[:timeline].each{|button|%> <% if button[:is_current] && button[:title] == "Qualification" %><a href="#" class="button text right"><span class="button_content">Upload Round 1 Compliance Documents</span></a><%end%> <% } if @page_state && @page_state[:timeline] %>
+				<% @page_state[:timeline].each{|button|%> <% if button[:is_current] && button[:title] == "Qualification" %><a href="#" class="button text right"><span class="button_content"><em>Seller XYZ</em> Upload Round 1 Compliance Documentation</span></a><%end%> <% } if @page_state && @page_state[:timeline] %>
 			</div>
 		</div>
 	</div>
