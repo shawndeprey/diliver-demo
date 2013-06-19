@@ -222,6 +222,16 @@ body
 		margin-right: auto;
 	}
 
+	div.middle
+	{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 50%;
+		height: 240px;
+		margin: -120px 0 0 -25%;
+	}
+
 	table.center
 	{
 		margin-left: auto;
@@ -257,6 +267,16 @@ body
 		th.right_justify
 		{
 			text-align: right;
+		}
+
+		td.center_justify
+		{
+			text-align: center;
+		}
+
+		th.center_justify
+		{
+			text-align: center;
 		}
 
 		td.small_text
