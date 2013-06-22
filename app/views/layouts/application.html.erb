@@ -57,7 +57,7 @@
 					<a href="<%= @page_state[:next_button][0][:url]%>" class="button text right"><span class="button_content"><%= @page_state[:next_button][0][:title]%></span><img src="/images/arrow-right.png" class="text_arrow_right"/></a>
 				<% end %>
 
-				<% @page_state[:timeline].each{|button|%> <% if button[:is_current] && button[:title] == "Qualification" %><a href="#" class="button text right"><span class="button_content"><em>Seller XYZ</em> Upload Round 1 Compliance Documentation</span></a><%end%> <% if button[:is_current] && button[:title] == "Confirmatory Due Diligence" %><a href="#" class="button text right"><span class="button_content"><em>Seller XYZ</em> Upload Round 2 Compliance Documentation</span></a><%end%><% } if @page_state && @page_state[:timeline] %>
+				<% @page_state[:timeline].each{|button|%> <% if button[:is_current] && button[:title] == "Qualification" %><a href="#" class="button text right"><span class="button_content"><em>Seller XYZ</em> Upload Round 1 Compliance Documentation</span></a><%end%> <% if button[:is_current] && button[:title] == "Confirmatory Due Diligence" %><a href="#" class="button text right" id="round_2_document"><span class="button_content"><em>Seller XYZ</em> Upload Round 2 Compliance Documentation</span></a><%end%><% } if @page_state && @page_state[:timeline] %>
 			</div>
 		</div>
 	</div>
