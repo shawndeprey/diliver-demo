@@ -132,6 +132,12 @@ body
 		-ms-transform: translateX(400px);
 		transform: translateX(400px);
 
+		div.external_title {
+			position: relative;
+			left: -135px;
+			top: -2px;
+		}
+
 		.tab
 		{
 			-webkit-transition: 0.4s ease;
