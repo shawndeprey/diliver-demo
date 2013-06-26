@@ -13,7 +13,7 @@
 	<div class="header">
 		<%= image_tag("/images/logo-without-dimensions.png") %>
 		<div class="app_title">
-			<h2><em>MAST</em>&trade; Buy-Side Due Diligence Application (BDDA)</h2>
+			<h2><em>MAST</em> Buy-Side Due Diligence Application (BDDA)</h2>
 		</div>
 		<div class="user_info">
 			<div class="user_name">
@@ -26,7 +26,7 @@
 	</div>
 	<div class="toolbar">
 		<div class="toolbar_contents">
-			<% @page_state[:timeline].each{|button|%> <% if button[:is_current] && button[:title] == "Deal Team Identification" %><a href="#" class="button text left"><span class="button_content">New Transaction</span></a><%end%> <% } if @page_state && @page_state[:timeline] %>
+			<a href="#" class="button text right"><span class="button_content">Help</span></a>
 		</div>
 	</div>
 	<div class="nav_container">
@@ -47,7 +47,8 @@
 
 	<div class="footer">
 		<div class="copyright">
-			DiliVer LLC &#169; 2013
+			DiliVer LLC &#169; 2013 | Legg Mason Tower | 100 International Drive | 23rd Floor | Batimore, MD 21202 | 443-759-3800 |
+			<a href="http://www.diliver.com">www.diliver.com</a>
 		</div>
 		<div class="footer_toolbar">
 			<div class="footer_toolbar_contents">
@@ -55,6 +56,9 @@
 
 				<% if @page_state && @page_state[:next_button]%>
 					<a href="<%= @page_state[:next_button][0][:url]%>" class="button text right"><span class="button_content"><%= @page_state[:next_button][0][:title]%></span><img src="/images/arrow-right.png" class="text_arrow_right"/></a>
+					<% if @exit_session %>
+						<a href="/demo" class="button text right"><span class="button_content">Exit Session</span></a>
+					<% end %>
 				<% end %>
 
 				<% @page_state[:timeline].each{|button|%> <% if button[:is_current] && button[:title] == "Qualification" %><a href="#" class="button text right"><span class="button_content"><em>Seller XYZ</em> Upload Round 1 Compliance Documentation</span></a><%end%> <% if button[:is_current] && button[:title] == "Confirmatory Due Diligence" %><a href="#" class="button text right" id="round_2_document"><span class="button_content"><em>Seller XYZ</em> Upload Round 2 Compliance Documentation</span></a><%end%><% } if @page_state && @page_state[:timeline] %>

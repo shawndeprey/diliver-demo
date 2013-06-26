@@ -9,6 +9,7 @@ class Demo::DefaultController < ApplicationController
 
   # GET /team-identification
   def team_identification
+    @exit_session = true
     @page_state = {timeline:[{title:"Deal Team Identification", url:"/demo/team-identification", is_active:true, is_current:true},
                              {title:"Transaction Analysis", url:"/demo/transaction-analysis", is_active:false, is_current:false},
                              {title:"Screening", url:"/demo/screening", is_active:false, is_current:false},
@@ -26,6 +27,7 @@ class Demo::DefaultController < ApplicationController
 
   # GET /transaction-analysis
   def transaction_analysis
+    @exit_session = true
     @page_state = {timeline:[{title:"Deal Team Identification", url:"/demo/team-identification", is_active:true, is_current:false},
                              {title:"Transaction Analysis", url:"/demo/transaction-analysis", is_active:true, is_current:true},
                              {title:"Screening", url:"/demo/screening", is_active:false, is_current:false},
@@ -43,6 +45,7 @@ class Demo::DefaultController < ApplicationController
 
   # GET /screening
   def screening
+    @exit_session = true
     @page_state = {timeline:[{title:"Deal Team Identification", url:"/demo/team-identification", is_active:true, is_current:false},
                              {title:"Transaction Analysis", url:"/demo/transaction-analysis", is_active:true, is_current:false},
                              {title:"Screening", url:"/demo/screening", is_active:true, is_current:true},
@@ -60,6 +63,7 @@ class Demo::DefaultController < ApplicationController
 
   # GET /qualification
   def qualification
+    @exit_session = true
     @page_state = {timeline:[{title:"Deal Team Identification", url:"/demo/team-identification", is_active:true, is_current:false},
                              {title:"Transaction Analysis", url:"/demo/transaction-analysis", is_active:true, is_current:false},
                              {title:"Screening", url:"/demo/screening", is_active:true, is_current:false},
@@ -77,6 +81,7 @@ class Demo::DefaultController < ApplicationController
 
   # GET /preliminary-due-diligence
   def preliminary_due_diligence
+    @exit_session = true
     @page_state = {timeline:[{title:"Deal Team Identification", url:"/demo/team-identification", is_active:true, is_current:false},
                              {title:"Transaction Analysis", url:"/demo/transaction-analysis", is_active:true, is_current:false},
                              {title:"Screening", url:"/demo/screening", is_active:true, is_current:false},
@@ -94,6 +99,7 @@ class Demo::DefaultController < ApplicationController
 
   # GET /initial-valuation
   def initial_valuation
+    @exit_session = true
     @page_state = {timeline:[{title:"Deal Team Identification", url:"/demo/team-identification", is_active:true, is_current:false},
                              {title:"Transaction Analysis", url:"/demo/transaction-analysis", is_active:true, is_current:false},
                              {title:"Screening", url:"/demo/screening", is_active:true, is_current:false},
@@ -154,7 +160,7 @@ class Demo::DefaultController < ApplicationController
                              {title:"Confirmatory Due Diligence", url:"/demo/confirmatory-due-diligence", is_active:true, is_current:false},
                              {title:"Valuation Preparation", url:"/demo/valuation-preparation", is_active:true, is_current:false},
                              {title:"Final Valuation", url:"/demo/final-valuation", is_active:true, is_current:true}],
-                   next_button:[{title:"Complete Session", url:"/demo"}]}
+                   next_button:[{title:"Session Complete: Update Transaction History", url:"/demo"}]}
     respond_to do |format|
       format.html { } # final_valuation.html.erb
     end
