@@ -786,10 +786,15 @@ body
 		div.app_title
 		{
 			position: absolute;
-			top: 31px;
+			top: 18px;
 			width: 50%;
 			left: 25%;
 			text-align: center;
+			span {
+				font-size: 14px;
+				top: -5px;
+				position: relative;
+			}
 		}
 
 		div.user_info
