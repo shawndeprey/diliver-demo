@@ -1,0 +1,34 @@
+<div class="middle_container center">
+  <h2>Launch Surveys</h2>
+
+  <br>
+
+  <div class="launch_survey">
+    <center>
+      <table class="survey_listings">
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Options</th>
+          <th>Specific Role</th>
+        </tr>
+
+      <% @launch_surveys.each do |ls| %>
+        <tr>
+          <td><%= ls.full_name %></td>
+          <td><%= ls.email %></td>
+          <td><%= simple_format "<strong>Merger/Acquisition:</strong> #{ls.mergers_acquisitions}\n <strong>As Buyer:</strong> #{ls.as_buyer}, <strong>As Seller:</strong> #{ls.as_seller}, <strong>As Intermediary:</strong> #{ls.as_intermediary}\n <strong>Personally Involved:</strong> #{ls.personally_involved}" %></td>
+          <td width="250px"><%= ls.specific_role %></td>
+      <!--
+          <td><%#= link_to 'Show', ls %></td>
+          <td><%#= link_to 'Edit', edit_launch_survey_path(ls) %></td>
+          <td><%#= link_to 'Destroy', ls, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      -->
+        </tr>
+      <% end %>
+      </table>
+    </center>
+  </div>
+</div>
+
+<%#= link_to 'New Launch survey', new_launch_survey_path %>
