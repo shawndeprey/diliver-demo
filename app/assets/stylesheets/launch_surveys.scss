@@ -1,0 +1,38 @@
+body {
+	div.launch_survey {
+		input[type=checkbox] {
+			visibility: visible;
+		}
+
+		div.notice {
+			color: #4C9245;
+		}
+
+		img.survey_logo {
+			width: 300px;
+			margin: 0px 0px 20px 0px;
+		}
+
+		table.survey {
+			width: 60%;
+			tr {
+				td {
+					padding: 10px 0px 10px 10px;
+					&.left { width: 25%; }
+					&.question { width: 75%;}
+					&.half { width: 50%; }
+					&.full { width: 100%; textarea { width: 95%; } input[type=text]{ width: 95%; } }
+				}
+			}
+		}
+
+		table.survey_listings {
+			tr {
+				td {
+					border-top: solid 1px #CCC;
+					padding: 10px 0px 10px 10px;
+				}
+			}
+		}
+	}
+}

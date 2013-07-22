@@ -1,0 +1,131 @@
+<div class="middle_container">
+  <div class="center launch_survey">
+  	<center>
+  		<%= image_tag "/images/survey-logo.png", :class => "survey_logo" %>
+
+  		<% if notice %>
+			  <div class="notice"><%= notice %></div><br>
+			<% end %>
+
+    <%= form_for(@launch_survey) do |f| %>
+    	<table class="survey">
+
+    		<tr>
+    			<td class="question">
+    				Are you interested in mergers and acquisitions?
+    			</td>
+    			<td class="left">
+    				<%= f.label :mergers_acquisitions, "Yes" %>
+		    		<%= f.check_box :mergers_acquisitions %>
+    			</td>
+    		</tr>
+
+    		<tr>
+    			<td class="question">
+    				Is your interest in M&A as a buyer (e.g., investor, financier), seller (e.g., owner, operator), or intermediary? <strong>(B/S/I)</strong>
+    			</td>
+    			<td class="left">
+		    		<%= f.label :as_buyer, "B" %>
+				    <%= f.check_box :as_buyer %>
+				    <%= f.label :as_seller, "S" %>
+				    <%= f.check_box :as_seller %>
+				    <%= f.label :as_intermediary, "I" %>
+				    <%= f.check_box :as_intermediary %>
+    			</td>
+    		</tr>
+
+    		<tr>
+    			<td class="question">
+    				Are you personally involved in any way with the due diligence process for M&A transactions?
+    			</td>
+    			<td class="left">
+    				<%= f.label :personally_involved, "Yes" %>
+		    		<%= f.check_box :personally_involved %>
+    			</td>
+    		</tr>
+
+    		<tr>
+    			<td colspan="2" class="full">
+    				What is your specific role? (Please Describe)<br>
+		    		<%= f.text_area :specific_role, :style => 'height: 100px;' %>
+    			</td>
+    		</tr>
+
+    		<tr>
+    			<td colspan="2" class="full">
+    				<strong><em>
+					  	DiliVer is a start-up software company in the merger and acquisition space. Our verticalized, 
+					  	scorecard-powered due diligence applications drive a new paradigm that improves post-transaction 
+					  	outcomes for combined entities. Our website will launch shortly—please stay engaged!
+					  </em></strong>
+    			</td>
+    		</tr>
+    	</table>
+    	<table class="survey">
+    		<tr>
+    			<td class="half">
+    				<h3>First Name</h3>
+    				<%= f.text_field :first_name %>
+    			</td>
+    			<td class="half">
+    				<h3>Last Name</h3>
+    				<%= f.text_field :last_name %>
+    			</td>
+    		</tr>
+
+    		<tr>
+    			<td colspan="2" class="full">
+				  	<h3>Email</h3>
+    				<%= f.text_field :email %>
+    			</td>
+    		</tr>
+
+    	</table>
+
+		  <div class="field">
+		  	<%= f.submit "Submit" %>
+		  </div>
+		  
+    <% end %>
+
+    <br><br>
+    <hr><br><br>
+
+    <table class="survey">
+    	<tr>
+    		<th><h3>Current M&A Due Diligence <u>Paradigm</u></h3></th>
+    		<th><h3>New DiliVer M&A Due Diligence <u>Paradigm</u></h3></th>
+    		<th><h3>DiliVer Intellectual Property <u>Differentiators</u></h3></th>
+    	</tr>
+    	<tr>
+    		<td>Deal-Team/Transaction- Focused Mindset</td>
+    		<td>Combined Entity/ Outcome-Focused Mindset</td>
+    		<td>3-Phase M&A Outcome Optimization Approach (based on Growth Positioning & Leveraging Solution Delivery Methodology)</td>
+    	</tr>
+    	<tr>
+    		<td>General-Purpose/ Process-Driven Software Tools</td>
+    		<td>Industry-Specific/ Data-Driven Software Tools</td>
+    		<td>Verticalized, Scorecard-Powered M&A Due Diligence Applications (based on Value Allocation Enterprise Model)</td>
+    	</tr>
+    </table>
+
+    <br><hr><br><br>
+
+    <table class="survey">
+    	<tr>
+    		<th><h3>Current Paradigm Problem Areas</h3></th>
+    		<th><h3>Benefits of DiliVer</h3></th>
+    	</tr>
+    	<tr>
+    		<td class="half">Inability to Overcome Bad Results (Uncompetitive Valuations, Failure to Close Good Deals, Poor Combined Entity Performance)</td>
+    		<td class="half">Able to Influence Better Results (Justified Investments, High Transaction Close Rate, Expected Return-On- Investment)</td>
+    	</tr>
+    	<tr>
+    		<td class="half">Painfully Slow, Expensive, and Imprecise Transactions (Departmental Roundups, Late “Same Planet” Decisions, No Actionable Business Intelligence)</td>
+    		<td class="half">Performance Measurement-Based Transactions (Streamlined Workflow, Early Qualification, Metrics-Driven Decision Making)</td>
+    	</tr>
+    </table>
+
+  	</center>
+  </div>
+</div>

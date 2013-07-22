@@ -11,6 +11,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define(:version => 20130721200241) do
+
+  create_table "launch_surveys", :force => true do |t|
+    t.boolean  "mergers_acquisitions"
+    t.boolean  "as_buyer"
+    t.boolean  "as_seller"
+    t.boolean  "as_intermediary"
+    t.boolean  "personally_involved"
+    t.text     "specific_role"
+    t.string   "title"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "email"
+    t.datetime "created_at",           :null => false
+    t.datetime "updated_at",           :null => false
+  end
 
 end
