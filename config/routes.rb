@@ -11,4 +11,7 @@ Diliver::Application.routes.draw do
     get '/valuation-preparation' => 'default#valuation_preparation'
     get '/final-valuation' => 'default#final_valuation'
   end
+
+  resources :launch_surveys
+  root to: 'default#index'
 end
