@@ -24,6 +24,8 @@ ActiveRecord::Schema.define(:version => 20130721200241) do
     t.string   "first_name"
     t.string   "last_name"
     t.string   "email"
+    t.string   "organization"
+    t.string   "phone_number"
     t.datetime "created_at",           :null => false
     t.datetime "updated_at",           :null => false
   end

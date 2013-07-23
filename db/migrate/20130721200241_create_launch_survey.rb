@@ -10,7 +10,9 @@ class CreateLaunchSurvey < ActiveRecord::Migration
       t.string	:title
       t.string	:first_name
       t.string	:last_name
-      t.string	:email
+      t.string  :email
+      t.string  :organization
+      t.string  :phone_number
       t.timestamps
     end
   end

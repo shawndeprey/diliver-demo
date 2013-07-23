@@ -1,4 +1,5 @@
 body {
+	div.content{ padding-bottom: 0px; }
 	div.launch_survey {
 		input[type=checkbox] {
 			visibility: visible;
@@ -17,11 +18,11 @@ body {
 			width: 60%;
 			tr {
 				td {
-					padding: 10px 0px 10px 10px;
+					padding: 5px 0px 5px 10px;
 					&.left { width: 25%; }
 					&.question { width: 75%;}
 					&.half { width: 50%; }
-					&.full { width: 100%; textarea { width: 95%; } input[type=text]{ width: 95%; } }
+					&.full { width: 100%; textarea { width: 95%; height: 50px; } input[type=text]{ width: 95%; } }
 				}
 			}
 		}

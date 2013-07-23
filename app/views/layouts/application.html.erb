@@ -8,33 +8,37 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<div class="background">
-	</div>
-	<div class="header">
-		<%= image_tag("/images/logo-without-dimensions.png") %>
-		<div class="app_title">
-			<h2><em>M&A Software Tools (MAST)&trade;</em><br> <span>Buy-Side Due Diligence Application (BDDA)</span></h2>
-		</div>
-		<div class="user_info">
-			<div class="user_name">
-				<p>Individual 1 | <a href=#>Logout</a></p>
+	<% unless @hide_layout %>
+		<div class="background"></div>
+		
+		<div class="header">
+			<%= image_tag("/images/logo-without-dimensions.png") %>
+			<div class="app_title">
+				<h2><em>M&A Software Tools (MAST)&trade;</em><br> <span>Buy-Side Due Diligence Application (BDDA)</span></h2>
 			</div>
-			<div class="user_title">
-				<p><em>Buyer ABC</em> Director of Corporate Development</p>
+			<div class="user_info">
+				<div class="user_name">
+					<p>Individual 1 | <a href=#>Logout</a></p>
+				</div>
+				<div class="user_title">
+					<p><em>Buyer ABC</em> Director of Corporate Development</p>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="toolbar">
-		<div class="toolbar_contents">
-			<a href="#" class="button text right"><span class="button_content">Help</span></a>
+		<div class="toolbar">
+			<div class="toolbar_contents">
+				<a href="#" class="button text right"><span class="button_content">Help</span></a>
+			</div>
 		</div>
-	</div>
-	<div class="nav_container">
-		<ul>
-			<% @page_state[:timeline].each{|button|%> <li><a href='<%= button[:url] %>' <%if button[:is_active]%>class="nav_active"<%end%>><% if button[:is_current]%><img src="/images/arrow-right.png" /><%end%><%= button[:title] %></a></li> <% } if @page_state && @page_state[:timeline] %>
-		</ul>
-	</div>
-	<% if@page_state %><hr><%end%>
+		<div class="nav_container">
+			<ul>
+				<% @page_state[:timeline].each{|button|%> <li><a href='<%= button[:url] %>' <%if button[:is_active]%>class="nav_active"<%end%>><% if button[:is_current]%><img src="/images/arrow-right.png" /><%end%><%= button[:title] %></a></li> <% } if @page_state && @page_state[:timeline] %>
+			</ul>
+		</div>
+		<% if @page_state %><hr><%end%>
+	<% end %>
+
+
 
 	<!-- Specific page content goes here -->
 	<div class="content">
@@ -42,27 +46,30 @@
 	</div>
 	<!-- Specific page content ends here -->
 
-	<div class="footer_spacer">
-	</div>
 
-	<div class="footer">
-		<div class="copyright">
-			DiliVer LLC &#169; 2013 | Legg Mason Tower | 100 International Drive | 23rd Floor | Batimore, MD 21202 | 443-759-3800 | www.diliver.com
-		</div>
-		<div class="footer_toolbar">
-			<div class="footer_toolbar_contents">
-				<% @page_state[:timeline].each{|button|%> <% if button[:is_current]%><p>Current Step: <%= button[:title] %></p><%end%> <% } if @page_state && @page_state[:timeline] %>
 
-				<% if @page_state && @page_state[:next_button]%>
-					<a href="<%= @page_state[:next_button][0][:url]%>" class="button text right"><span class="button_content"><%= @page_state[:next_button][0][:title]%></span><img src="/images/arrow-right.png" class="text_arrow_right"/></a>
-					<% if @exit_session %>
-						<a href="/demo" class="button text right"><span class="button_content">End Session</span></a>
+	<% unless @hide_layout %>
+		<div class="footer_spacer"></div>
+
+		<div class="footer">
+			<div class="copyright">
+				DiliVer LLC &#169; 2013 | Legg Mason Tower | 100 International Drive | 23rd Floor | Batimore, MD 21202 | 443-759-3800 | www.diliver.com
+			</div>
+			<div class="footer_toolbar">
+				<div class="footer_toolbar_contents">
+					<% @page_state[:timeline].each{|button|%> <% if button[:is_current]%><p>Current Step: <%= button[:title] %></p><%end%> <% } if @page_state && @page_state[:timeline] %>
+
+					<% if @page_state && @page_state[:next_button]%>
+						<a href="<%= @page_state[:next_button][0][:url]%>" class="button text right"><span class="button_content"><%= @page_state[:next_button][0][:title]%></span><img src="/images/arrow-right.png" class="text_arrow_right"/></a>
+						<% if @exit_session %>
+							<a href="/demo" class="button text right"><span class="button_content">End Session</span></a>
+						<% end %>
 					<% end %>
-				<% end %>
 
-				<% @page_state[:timeline].each{|button|%> <% if button[:is_current] && button[:title] == "Qualification" %><a href="#" class="button text right"><span class="button_content"><em>Seller XYZ</em> Upload Round 1 Compliance Documentation</span></a><%end%> <% if button[:is_current] && button[:title] == "Confirmatory Due Diligence" %><a href="#" class="button text right" id="round_2_document"><span class="button_content"><em>Seller XYZ</em> Upload Round 2 Compliance Documentation</span></a><%end%><% } if @page_state && @page_state[:timeline] %>
+					<% @page_state[:timeline].each{|button|%> <% if button[:is_current] && button[:title] == "Qualification" %><a href="#" class="button text right"><span class="button_content"><em>Seller XYZ</em> Upload Round 1 Compliance Documentation</span></a><%end%> <% if button[:is_current] && button[:title] == "Confirmatory Due Diligence" %><a href="#" class="button text right" id="round_2_document"><span class="button_content"><em>Seller XYZ</em> Upload Round 2 Compliance Documentation</span></a><%end%><% } if @page_state && @page_state[:timeline] %>
+				</div>
 			</div>
 		</div>
-	</div>
+	<% end %>
 </body>
 </html>

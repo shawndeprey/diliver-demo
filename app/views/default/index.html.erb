@@ -17,12 +17,14 @@
     			<td class="left">
     				<%= f.label :mergers_acquisitions, "Yes" %>
 		    		<%= f.check_box :mergers_acquisitions %>
+            <label for="no_box_1">No</label>
+            <input id="no_box_1" type="checkbox">
     			</td>
     		</tr>
 
     		<tr>
     			<td class="question">
-    				Is your interest in M&A as a buyer (e.g., investor, financier), seller (e.g., owner, operator), or intermediary? <strong>(B/S/I)</strong>
+    				Is your interest in M&A as a buyer (e.g., investor, financier), seller (e.g., owner, operator), or intermediary?
     			</td>
     			<td class="left">
 		    		<%= f.label :as_buyer, "B" %>
@@ -41,23 +43,25 @@
     			<td class="left">
     				<%= f.label :personally_involved, "Yes" %>
 		    		<%= f.check_box :personally_involved %>
+            <label for="no_box_2">No</label>
+            <input id="no_box_2" type="checkbox">
     			</td>
     		</tr>
 
     		<tr>
     			<td colspan="2" class="full">
     				What is your specific role? (Please Describe)<br>
-		    		<%= f.text_area :specific_role, :style => 'height: 100px;' %>
+		    		<%= f.text_area :specific_role %>
     			</td>
     		</tr>
 
     		<tr>
     			<td colspan="2" class="full">
-    				<strong><em>
-					  	DiliVer is a start-up software company in the merger and acquisition space. Our verticalized, 
-					  	scorecard-powered due diligence applications drive a new paradigm that improves post-transaction 
-					  	outcomes for combined entities. Our website will launch shortly—please stay engaged!
-					  </em></strong>
+    				<strong><em><center>
+					  	DiliVer is a start-up software company in the mergers and acquisitions space. <br>Our verticalized, 
+					  	scorecard-powered due diligence applications drive a new <br>paradigm that improves post-transaction 
+					  	outcomes for combined entities. <br>Our website will launch shortly—please stay engaged!
+					  </center></em></strong>
     			</td>
     		</tr>
     	</table>
@@ -73,21 +77,32 @@
     			</td>
     		</tr>
 
-    		<tr>
-    			<td colspan="2" class="full">
-				  	<h3>Email</h3>
-    				<%= f.text_field :email %>
-    			</td>
-    		</tr>
+        <tr>
+          <td class="half">
+            <h3>Email</h3>
+            <%= f.text_field :email %>
+          </td>
+          <td class="half">
+            <h3>Phone Number</h3>
+            <%= f.text_field :phone_number %>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2" class="full">
+            <h3>organization</h3>
+            <%= f.text_field :organization %>
+          </td>
+        </tr>
 
     	</table>
 
 		  <div class="field">
 		  	<%= f.submit "Submit" %>
 		  </div>
-		  
+		  <br>
     <% end %>
-
+<!--
     <br><br>
     <hr><br><br>
 
@@ -125,7 +140,7 @@
     		<td class="half">Performance Measurement-Based Transactions (Streamlined Workflow, Early Qualification, Metrics-Driven Decision Making)</td>
     	</tr>
     </table>
-
+-->
   	</center>
   </div>
 </div>

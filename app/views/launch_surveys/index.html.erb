@@ -17,7 +17,7 @@
         <tr>
           <td><%= ls.full_name %></td>
           <td><%= ls.email %></td>
-          <td><%= simple_format "<strong>Merger/Acquisition:</strong> #{ls.mergers_acquisitions}\n <strong>As Buyer:</strong> #{ls.as_buyer}, <strong>As Seller:</strong> #{ls.as_seller}, <strong>As Intermediary:</strong> #{ls.as_intermediary}\n <strong>Personally Involved:</strong> #{ls.personally_involved}" %></td>
+          <td><%= simple_format "<strong>Merger/Acquisition:</strong> #{ls.mergers_acquisitions}\n <strong>As Buyer:</strong> #{ls.as_buyer}, <strong>As Seller:</strong> #{ls.as_seller}, <strong>As Intermediary:</strong> #{ls.as_intermediary}\n <strong>Personally Involved:</strong> #{ls.personally_involved},\n<strong>Company:</strong> #{ls.organization}, <strong>Phone:</strong> #{ls.phone_number}" %></td>
           <td width="250px"><%= ls.specific_role %></td>
       <!--
           <td><%#= link_to 'Show', ls %></td>
