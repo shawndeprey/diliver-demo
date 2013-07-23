@@ -11,7 +11,7 @@ body {
 
 		img.survey_logo {
 			width: 300px;
-			margin: 0px 0px 20px 0px;
+			margin: 0px 0px 40px 0px;
 		}
 
 		table.survey {
@@ -19,6 +19,7 @@ body {
 			tr {
 				td {
 					padding: 5px 0px 5px 10px;
+					text-align: left;
 					&.left { width: 25%; }
 					&.question { width: 75%;}
 					&.half { width: 50%; }
